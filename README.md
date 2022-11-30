@@ -1,5 +1,5 @@
 Yuichi Tateno, id:secondlife, @hotchpotch
 
-- Hi, I am a Japanese software developer.
+- Hi, I am a Japanese software engineer.
 - My Site: https://secon.dev/
 
