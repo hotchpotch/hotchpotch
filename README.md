@@ -5,4 +5,4 @@ Yuichi Tateno, id:secondlife, @hotchpotch
   - en: https://hotchpotch.dev/
   - ja: https://secon.dev/
 
-![profile image](https://storage.googleapis.com/secons-site-images/other/blog_images/secon_icon_nendo.webp)
+<img height=200 src="https://storage.googleapis.com/secons-site-images/other/blog_images/secon_icon_nendo.webp" />
