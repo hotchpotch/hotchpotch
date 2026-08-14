@@ -78,8 +78,8 @@ The README sections are:
 2. Tools & Other Projects
 3. Older projects, collapsed in a `<details>` element
 
-Place `<sub>Last updated: YYYY-MM-dd</sub>` immediately above the
-`NLP, IR, ML, DS & AI` heading.
+Do not render a last-updated label in the profile. The update date is still used
+internally to calculate the five-year older-project boundary.
 
 The older-project boundary is five years before the update date and is measured
 from GitHub's `pushedAt` value (the last code push). Do not use `updatedAt` for
@@ -146,9 +146,9 @@ For every periodic update, follow this process:
    `git add repos.json README.md`.
 4. Inspect the staged diff with `git diff --cached -- repos.json README.md`.
    Check repository membership, emoji uniqueness, 5–10 word English
-   descriptions, Japan flags, categories, star ordering, older project
-   boundary, and update date. In particular, verify that no private repository
-   or private information appears.
+   descriptions, Japan flags, categories, star ordering, and older project
+   boundary. In particular, verify that no private repository or private
+   information appears.
 5. If any problem is found, do not commit. Fix the classification or updater,
    regenerate the README, stage it again, and repeat the review.
 6. Only after determining that the staged result is correct, stage any other

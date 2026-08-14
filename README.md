@@ -1,18 +1,15 @@
 # Hello! 👋
 
-Hi, I am Yuichi Tateno, a Japanese software engineer. Online, I use the handle `@hotchpotch` or `id:secondlife`.
+👤 Hi, I am **Yuichi Tateno**, a Japanese software engineer — online as **`@hotchpotch`** or **`id:secondlife`**.
 
-My profile icon is a robot head drooling into a puddle.
+🔎 **Currently:** focused on **IR (information retrieval)** research and development.
 
-I am currently interested in IR (information retrieval), and I work on IR-related research and development.
+🌐 **My sites:** **[hotchpotch.dev(en)](https://hotchpotch.dev/)** | **[secon.dev(ja)](https://secon.dev/)**
 
-My sites: [hotchpotch.dev(en)](https://hotchpotch.dev/) | [secon.dev(ja)](https://secon.dev/)
-
-<img height="80" src="https://storage.googleapis.com/secons-site-images/other/blog_images/secon_icon_nendo.webp" alt="Robot head drooling into a puddle" />
+<img height="80" src="https://storage.googleapis.com/secons-site-images/other/blog_images/secon_icon_nendo.webp" alt="Robot head drooling into a puddle" /><br />
+<sub>My profile icon is a robot head drooling into a puddle.</sub>
 
 <!-- profile-repositories:start -->
-<sub>Last updated: 2026-08-15</sub>
-
 ## NLP, IR, ML, DS & AI
 
 - ⚡ **[fast-bunkai](https://github.com/hotchpotch/fast-bunkai)** (75 stars) - 🇯🇵 Fast Japanese sentence splitting powered by `Rust`.

@@ -65,7 +65,7 @@ without a code update. Treat a missing `pushedAt` value as older.
 
 Render NLP, IR, ML, DS, and AI repositories together in one combined
 `NLP, IR, ML, DS & AI` list; do not create separate subheadings for those
-topics. Put `<sub>Last updated: YYYY-MM-dd</sub>` immediately above that heading.
+topics. Do not render a last-updated label in the profile.
 
 ## Required update workflow
 
@@ -96,8 +96,7 @@ git diff --cached -- repos.json README.md
 ```
 
 Verify repository membership, emojis, descriptions, Japan flags, categories,
-star ordering, the five-year boundary, the update date, and the absence of
-private information.
+star ordering, the five-year boundary, and the absence of private information.
 If anything is questionable, do not commit; fix it and repeat the generation
 and review. Commit and push only after the staged diff has been judged correct.
 
