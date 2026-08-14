@@ -48,10 +48,14 @@ and review every proposed classification.
 Within each README category, sort repositories by GitHub stars descending and
 then by repository name. Omit placeholder text when a repository has no
 description. Keep older non-topical projects in the collapsed `<details>`
-section. Preserve topical NLP/IR/ML/DS/AI projects in their topical sections
+section. Preserve topical NLP/IR/ML/DS/AI projects in the combined topical list
 regardless of age. Determine the five-year boundary from `pushedAt`, not
 `updatedAt`; repository metadata and topic changes can modify `updatedAt`
 without a code update. Treat a missing `pushedAt` value as older.
+
+Render NLP, IR, ML, DS, and AI repositories together in one combined
+`NLP, IR, ML, DS & AI` list; do not create separate subheadings for those
+topics. Put `<sub>Last updated: YYYY-MM-dd</sub>` immediately above that heading.
 
 ## Required update workflow
 

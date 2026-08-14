@@ -62,9 +62,12 @@ placeholder description.
 
 The README sections are:
 
-1. NLP, IR, ML, DS & AI
+1. NLP, IR, ML, DS & AI, as one combined list sorted by stars
 2. Tools & Other Projects
 3. Older projects, collapsed in a `<details>` element
+
+Place `<sub>Last updated: YYYY-MM-dd</sub>` immediately above the
+`NLP, IR, ML, DS & AI` heading.
 
 The older-project boundary is five years before the update date and is measured
 from GitHub's `pushedAt` value (the last code push). Do not use `updatedAt` for

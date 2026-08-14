@@ -158,7 +158,7 @@ def sort_repositories(repositories: Iterable[Repository]) -> list[Repository]:
 def markdown_list(repositories: Iterable[Repository]) -> str:
     lines = []
     for repo in sort_repositories(repositories):
-        suffix = f" — {repo.description}" if repo.description else ""
+        suffix = f" / {repo.description}" if repo.description else ""
         lines.append(f"- [{repo.name}]({repo.url}) ⭐ {repo.stars}{suffix}")
     return "\n".join(lines)
 
@@ -174,22 +174,20 @@ def render_repository_block(repositories: list[Repository], today: dt.date) -> s
     cutoff = five_year_cutoff(today).isoformat()
     categorized = [(repo, inferred_topics(repo)) for repo in repositories]
 
-    ir = [repo for repo, topics in categorized if "information-retrieval" in topics]
-    nlp = [
-        repo
-        for repo, topics in categorized
-        if "nlp" in topics and "information-retrieval" not in topics
-    ]
-    ml_ds_ai = [
+    topical = [
         repo
         for repo, topics in categorized
         if topics.intersection(
-            {"machine-learning", "data-science", "artificial-intelligence"}
+            {
+                "nlp",
+                "information-retrieval",
+                "machine-learning",
+                "data-science",
+                "artificial-intelligence",
+            }
         )
-        and "information-retrieval" not in topics
-        and "nlp" not in topics
     ]
-    topical_names = {repo.name for repo in (*ir, *nlp, *ml_ds_ai)}
+    topical_names = {repo.name for repo in topical}
     other = [repo for repo in repositories if repo.name not in topical_names]
     active = [repo for repo in other if repo.pushed_at[:10] >= cutoff]
     older = [repo for repo in other if repo.pushed_at[:10] < cutoff]
@@ -197,19 +195,11 @@ def render_repository_block(repositories: list[Repository], today: dt.date) -> s
     return "\n".join(
         (
             START_MARKER,
+            f"<sub>Last updated: {today.isoformat()}</sub>",
+            "",
             "## NLP, IR, ML, DS & AI",
             "",
-            "### Information Retrieval",
-            "",
-            markdown_list(ir),
-            "",
-            "### NLP",
-            "",
-            markdown_list(nlp),
-            "",
-            "### ML / Data Science / AI",
-            "",
-            markdown_list(ml_ds_ai),
+            markdown_list(topical),
             "",
             "## Tools & Other Projects",
             "",
@@ -221,8 +211,6 @@ def render_repository_block(repositories: list[Repository], today: dt.date) -> s
             markdown_list(older),
             "",
             "</details>",
-            "",
-            f"<sub>Last updated: {today.isoformat()}</sub>",
             END_MARKER,
         )
     )
