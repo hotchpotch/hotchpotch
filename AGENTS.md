@@ -56,6 +56,12 @@ Use one leading emoji per repository and keep emojis unique. Set
 only when the current count is greater than 10. The updater synchronizes
 `url`, `stars`, and `pushed_at`; humans curate all other fields.
 
+Use the boolean `hidden` field to keep a public repository in the verified
+inventory while omitting it from every README project list. Do not delete a
+public repository from `repos.json` merely because it should not be displayed.
+Follow the hidden-name policy documented in `PROFILE_UPDATE.md`, including for
+new `secon-dev-*` repositories and names containing `test`.
+
 Within each README category, sort repositories by GitHub stars descending and
 then by display name. Keep older non-topical projects in the collapsed `<details>`
 section. Preserve topical NLP/IR/ML/DS/AI projects in the combined topical list

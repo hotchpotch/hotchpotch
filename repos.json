@@ -12,7 +12,8 @@
       ],
       "url": "https://github.com/hakari-bench/hakari-bench",
       "stars": 30,
-      "pushed_at": "2026-08-12T04:09:56Z"
+      "pushed_at": "2026-08-12T04:09:56Z",
+      "hidden": false
     },
     "hotchpotch/activerecord-raw-data": {
       "display_name": "activerecord-raw-data",
@@ -25,7 +26,8 @@
       ],
       "url": "https://github.com/hotchpotch/activerecord-raw-data",
       "stars": 22,
-      "pushed_at": "2015-10-09T00:08:56Z"
+      "pushed_at": "2015-10-09T00:08:56Z",
+      "hidden": false
     },
     "hotchpotch/advent-calendar2readlists": {
       "display_name": "advent-calendar2readlists",
@@ -38,7 +40,8 @@
       ],
       "url": "https://github.com/hotchpotch/advent-calendar2readlists",
       "stars": 16,
-      "pushed_at": "2014-01-14T05:45:59Z"
+      "pushed_at": "2014-01-14T05:45:59Z",
+      "hidden": false
     },
     "hotchpotch/Aground-ja_JP-translation": {
       "display_name": "Aground-ja_JP-translation",
@@ -51,7 +54,8 @@
       ],
       "url": "https://github.com/hotchpotch/Aground-ja_JP-translation",
       "stars": 1,
-      "pushed_at": "2020-04-28T10:51:42Z"
+      "pushed_at": "2020-04-28T10:51:42Z",
+      "hidden": true
     },
     "hotchpotch/android-IconicFontEngine": {
       "display_name": "android-IconicFontEngine",
@@ -64,7 +68,8 @@
       ],
       "url": "https://github.com/hotchpotch/android-IconicFontEngine",
       "stars": 29,
-      "pushed_at": "2015-08-28T02:31:10Z"
+      "pushed_at": "2015-08-28T02:31:10Z",
+      "hidden": false
     },
     "hotchpotch/anigif2png-js": {
       "display_name": "anigif2png-js",
@@ -77,7 +82,8 @@
       ],
       "url": "https://github.com/hotchpotch/anigif2png-js",
       "stars": 2,
-      "pushed_at": "2009-01-13T12:01:24Z"
+      "pushed_at": "2009-01-13T12:01:24Z",
+      "hidden": false
     },
     "hotchpotch/Arduino-HDC1000": {
       "display_name": "Arduino-HDC1000",
@@ -90,7 +96,8 @@
       ],
       "url": "https://github.com/hotchpotch/Arduino-HDC1000",
       "stars": 4,
-      "pushed_at": "2015-12-14T09:18:43Z"
+      "pushed_at": "2015-12-14T09:18:43Z",
+      "hidden": false
     },
     "hotchpotch/Arduino-i2cdetect": {
       "display_name": "Arduino-i2cdetect",
@@ -103,7 +110,8 @@
       ],
       "url": "https://github.com/hotchpotch/Arduino-i2cdetect",
       "stars": 5,
-      "pushed_at": "2017-03-17T02:05:46Z"
+      "pushed_at": "2017-03-17T02:05:46Z",
+      "hidden": false
     },
     "hotchpotch/Arduino-SN74141": {
       "display_name": "Arduino-SN74141",
@@ -116,7 +124,8 @@
       ],
       "url": "https://github.com/hotchpotch/Arduino-SN74141",
       "stars": 4,
-      "pushed_at": "2015-10-20T14:18:51Z"
+      "pushed_at": "2015-10-20T14:18:51Z",
+      "hidden": false
     },
     "hotchpotch/as3rails2u": {
       "display_name": "as3rails2u",
@@ -129,7 +138,8 @@
       ],
       "url": "https://github.com/hotchpotch/as3rails2u",
       "stars": 16,
-      "pushed_at": "2008-04-28T08:57:24Z"
+      "pushed_at": "2008-04-28T08:57:24Z",
+      "hidden": false
     },
     "hotchpotch/atok-direct-google-moshikashite": {
       "display_name": "atok-direct-google-moshikashite",
@@ -142,7 +152,8 @@
       ],
       "url": "https://github.com/hotchpotch/atok-direct-google-moshikashite",
       "stars": 4,
-      "pushed_at": "2009-07-31T16:58:12Z"
+      "pushed_at": "2009-07-31T16:58:12Z",
+      "hidden": false
     },
     "hotchpotch/baidu-translate-api-ruby": {
       "display_name": "baidu-translate-api-ruby",
@@ -155,7 +166,8 @@
       ],
       "url": "https://github.com/hotchpotch/baidu-translate-api-ruby",
       "stars": 0,
-      "pushed_at": "2018-08-08T10:22:45Z"
+      "pushed_at": "2018-08-08T10:22:45Z",
+      "hidden": false
     },
     "hotchpotch/beko-translate": {
       "display_name": "beko-translate",
@@ -168,7 +180,8 @@
       ],
       "url": "https://github.com/hotchpotch/beko-translate",
       "stars": 36,
-      "pushed_at": "2026-03-25T10:42:49Z"
+      "pushed_at": "2026-03-25T10:42:49Z",
+      "hidden": false
     },
     "hotchpotch/bin": {
       "display_name": "bin",
@@ -181,7 +194,8 @@
       ],
       "url": "https://github.com/hotchpotch/bin",
       "stars": 2,
-      "pushed_at": "2008-07-02T04:02:03Z"
+      "pushed_at": "2008-07-02T04:02:03Z",
+      "hidden": true
     },
     "hotchpotch/chrome-extension-starter": {
       "display_name": "chrome-extension-starter",
@@ -194,7 +208,8 @@
       ],
       "url": "https://github.com/hotchpotch/chrome-extension-starter",
       "stars": 26,
-      "pushed_at": "2009-09-28T05:09:16Z"
+      "pushed_at": "2009-09-28T05:09:16Z",
+      "hidden": false
     },
     "hotchpotch/digit_convertor": {
       "display_name": "digit_convertor",
@@ -207,7 +222,8 @@
       ],
       "url": "https://github.com/hotchpotch/digit_convertor",
       "stars": 3,
-      "pushed_at": "2013-07-11T05:04:54Z"
+      "pushed_at": "2013-07-11T05:04:54Z",
+      "hidden": false
     },
     "hotchpotch/dotfiles-vim": {
       "display_name": "dotfiles-vim",
@@ -220,7 +236,8 @@
       ],
       "url": "https://github.com/hotchpotch/dotfiles-vim",
       "stars": 19,
-      "pushed_at": "2014-01-07T08:55:23Z"
+      "pushed_at": "2014-01-07T08:55:23Z",
+      "hidden": false
     },
     "hotchpotch/duckdb-vaporetto": {
       "display_name": "duckdb-vaporetto",
@@ -234,7 +251,8 @@
       ],
       "url": "https://github.com/hotchpotch/duckdb-vaporetto",
       "stars": 11,
-      "pushed_at": "2026-04-30T08:47:43Z"
+      "pushed_at": "2026-04-30T08:47:43Z",
+      "hidden": false
     },
     "hotchpotch/duckdb-vaporetto-wasm-demo": {
       "display_name": "duckdb-vaporetto-wasm-demo",
@@ -248,7 +266,8 @@
       ],
       "url": "https://github.com/hotchpotch/duckdb-vaporetto-wasm-demo",
       "stars": 0,
-      "pushed_at": "2026-04-25T12:34:29Z"
+      "pushed_at": "2026-04-25T12:34:29Z",
+      "hidden": true
     },
     "hotchpotch/elastic-mapreduce": {
       "display_name": "elastic-mapreduce",
@@ -261,7 +280,8 @@
       ],
       "url": "https://github.com/hotchpotch/elastic-mapreduce",
       "stars": 2,
-      "pushed_at": "2012-01-12T08:43:13Z"
+      "pushed_at": "2012-01-12T08:43:13Z",
+      "hidden": false
     },
     "hotchpotch/emoji-ime-dictionary-ascii": {
       "display_name": "emoji-ime-dictionary-ascii",
@@ -274,7 +294,8 @@
       ],
       "url": "https://github.com/hotchpotch/emoji-ime-dictionary-ascii",
       "stars": 1,
-      "pushed_at": "2020-05-29T10:25:36Z"
+      "pushed_at": "2020-05-29T10:25:36Z",
+      "hidden": false
     },
     "hotchpotch/faraday_middleware-msgpack": {
       "display_name": "faraday_middleware-msgpack",
@@ -287,7 +308,8 @@
       ],
       "url": "https://github.com/hotchpotch/faraday_middleware-msgpack",
       "stars": 5,
-      "pushed_at": "2014-06-04T23:22:25Z"
+      "pushed_at": "2014-06-04T23:22:25Z",
+      "hidden": false
     },
     "hotchpotch/fast-bunkai": {
       "display_name": "fast-bunkai",
@@ -300,7 +322,8 @@
       ],
       "url": "https://github.com/hotchpotch/fast-bunkai",
       "stars": 75,
-      "pushed_at": "2025-10-14T07:58:24Z"
+      "pushed_at": "2025-10-14T07:58:24Z",
+      "hidden": false
     },
     "hotchpotch/fineweb-2-edu-japanese-classifier": {
       "display_name": "fineweb-2-edu-japanese-classifier",
@@ -313,7 +336,8 @@
       ],
       "url": "https://github.com/hotchpotch/fineweb-2-edu-japanese-classifier",
       "stars": 1,
-      "pushed_at": "2025-02-20T05:41:15Z"
+      "pushed_at": "2025-02-20T05:41:15Z",
+      "hidden": false
     },
     "hotchpotch/fluent-plugin-graphite": {
       "display_name": "fluent-plugin-graphite",
@@ -326,7 +350,8 @@
       ],
       "url": "https://github.com/hotchpotch/fluent-plugin-graphite",
       "stars": 9,
-      "pushed_at": "2012-08-03T08:37:27Z"
+      "pushed_at": "2012-08-03T08:37:27Z",
+      "hidden": false
     },
     "hotchpotch/fluent-plugin-resque": {
       "display_name": "fluent-plugin-resque",
@@ -339,7 +364,8 @@
       ],
       "url": "https://github.com/hotchpotch/fluent-plugin-resque",
       "stars": 8,
-      "pushed_at": "2017-04-27T05:38:41Z"
+      "pushed_at": "2017-04-27T05:38:41Z",
+      "hidden": false
     },
     "hotchpotch/fluent_interface": {
       "display_name": "fluent_interface",
@@ -352,7 +378,8 @@
       ],
       "url": "https://github.com/hotchpotch/fluent_interface",
       "stars": 4,
-      "pushed_at": "2008-07-08T15:33:41Z"
+      "pushed_at": "2008-07-08T15:33:41Z",
+      "hidden": false
     },
     "hotchpotch/GlitchKit": {
       "display_name": "GlitchKit",
@@ -365,7 +392,8 @@
       ],
       "url": "https://github.com/hotchpotch/GlitchKit",
       "stars": 36,
-      "pushed_at": "2014-01-29T04:29:08Z"
+      "pushed_at": "2014-01-29T04:29:08Z",
+      "hidden": false
     },
     "hotchpotch/google-photo-downloader-w-hatena": {
       "display_name": "google-photo-downloader-w-hatena",
@@ -378,7 +406,8 @@
       ],
       "url": "https://github.com/hotchpotch/google-photo-downloader-w-hatena",
       "stars": 2,
-      "pushed_at": "2020-08-03T00:37:06Z"
+      "pushed_at": "2020-08-03T00:37:06Z",
+      "hidden": false
     },
     "hotchpotch/hatena-blog-entry-mlt-example": {
       "display_name": "hatena-blog-entry-mlt-example",
@@ -391,7 +420,8 @@
       ],
       "url": "https://github.com/hotchpotch/hatena-blog-entry-mlt-example",
       "stars": 4,
-      "pushed_at": "2014-09-11T10:17:11Z"
+      "pushed_at": "2014-09-11T10:17:11Z",
+      "hidden": false
     },
     "hotchpotch/hatena-group-static-generator": {
       "display_name": "hatena-group-static-generator",
@@ -404,7 +434,8 @@
       ],
       "url": "https://github.com/hotchpotch/hatena-group-static-generator",
       "stars": 6,
-      "pushed_at": "2021-10-06T21:21:30Z"
+      "pushed_at": "2021-10-06T21:21:30Z",
+      "hidden": false
     },
     "hotchpotch/hatena-star-autopageload-googlechrome": {
       "display_name": "hatena-star-autopageload-googlechrome",
@@ -417,7 +448,8 @@
       ],
       "url": "https://github.com/hotchpotch/hatena-star-autopageload-googlechrome",
       "stars": 2,
-      "pushed_at": "2009-12-28T12:01:09Z"
+      "pushed_at": "2009-12-28T12:01:09Z",
+      "hidden": false
     },
     "hotchpotch/hatenausermulti-xul": {
       "display_name": "hatenausermulti-xul",
@@ -430,7 +462,8 @@
       ],
       "url": "https://github.com/hotchpotch/hatenausermulti-xul",
       "stars": 5,
-      "pushed_at": "2009-03-03T12:51:43Z"
+      "pushed_at": "2009-03-03T12:51:43Z",
+      "hidden": false
     },
     "hotchpotch/herdr-tiny-fingers": {
       "display_name": "herdr-tiny-fingers",
@@ -443,7 +476,8 @@
       ],
       "url": "https://github.com/hotchpotch/herdr-tiny-fingers",
       "stars": 6,
-      "pushed_at": "2026-08-04T10:03:33Z"
+      "pushed_at": "2026-08-04T10:03:33Z",
+      "hidden": false
     },
     "hotchpotch/hotchpotch": {
       "display_name": "hotchpotch",
@@ -456,7 +490,8 @@
       ],
       "url": "https://github.com/hotchpotch/hotchpotch",
       "stars": 0,
-      "pushed_at": "2026-08-14T23:07:52Z"
+      "pushed_at": "2026-08-14T23:16:27Z",
+      "hidden": true
     },
     "hotchpotch/hotchpotch.github.com": {
       "display_name": "hotchpotch.github.com",
@@ -469,7 +504,8 @@
       ],
       "url": "https://github.com/hotchpotch/hotchpotch.github.com",
       "stars": 2,
-      "pushed_at": "2010-02-10T02:38:03Z"
+      "pushed_at": "2010-02-10T02:38:03Z",
+      "hidden": false
     },
     "hotchpotch/hparser": {
       "display_name": "hparser",
@@ -482,7 +518,8 @@
       ],
       "url": "https://github.com/hotchpotch/hparser",
       "stars": 22,
-      "pushed_at": "2016-02-05T16:04:46Z"
+      "pushed_at": "2016-02-05T16:04:46Z",
+      "hidden": true
     },
     "hotchpotch/http-dump": {
       "display_name": "http-dump",
@@ -495,7 +532,8 @@
       ],
       "url": "https://github.com/hotchpotch/http-dump",
       "stars": 69,
-      "pushed_at": "2015-08-28T02:35:45Z"
+      "pushed_at": "2015-08-28T02:35:45Z",
+      "hidden": false
     },
     "hotchpotch/hue_ir_receiver": {
       "display_name": "hue_ir_receiver",
@@ -508,7 +546,8 @@
       ],
       "url": "https://github.com/hotchpotch/hue_ir_receiver",
       "stars": 0,
-      "pushed_at": "2015-09-24T11:52:32Z"
+      "pushed_at": "2015-09-24T11:52:32Z",
+      "hidden": false
     },
     "hotchpotch/hyatena-bot": {
       "display_name": "hyatena-bot",
@@ -521,7 +560,8 @@
       ],
       "url": "https://github.com/hotchpotch/hyatena-bot",
       "stars": 0,
-      "pushed_at": "2014-09-30T05:11:05Z"
+      "pushed_at": "2014-09-30T05:11:05Z",
+      "hidden": false
     },
     "hotchpotch/iphone-view-iframe": {
       "display_name": "iphone-view-iframe",
@@ -534,7 +574,8 @@
       ],
       "url": "https://github.com/hotchpotch/iphone-view-iframe",
       "stars": 2,
-      "pushed_at": "2009-08-11T06:22:17Z"
+      "pushed_at": "2009-08-11T06:22:17Z",
+      "hidden": false
     },
     "hotchpotch/JaCWIR": {
       "display_name": "JaCWIR",
@@ -547,7 +588,8 @@
       ],
       "url": "https://github.com/hotchpotch/JaCWIR",
       "stars": 8,
-      "pushed_at": "2025-09-09T07:44:04Z"
+      "pushed_at": "2025-09-09T07:44:04Z",
+      "hidden": false
     },
     "hotchpotch/JQaRA": {
       "display_name": "JQaRA",
@@ -561,7 +603,8 @@
       ],
       "url": "https://github.com/hotchpotch/JQaRA",
       "stars": 45,
-      "pushed_at": "2025-09-09T04:34:00Z"
+      "pushed_at": "2025-09-09T04:34:00Z",
+      "hidden": false
     },
     "hotchpotch/jscolor": {
       "display_name": "jscolor",
@@ -574,7 +617,8 @@
       ],
       "url": "https://github.com/hotchpotch/jscolor",
       "stars": 5,
-      "pushed_at": "2008-12-25T11:03:29Z"
+      "pushed_at": "2008-12-25T11:03:29Z",
+      "hidden": false
     },
     "hotchpotch/jsdeferred-webdatabase": {
       "display_name": "jsdeferred-webdatabase",
@@ -587,7 +631,8 @@
       ],
       "url": "https://github.com/hotchpotch/jsdeferred-webdatabase",
       "stars": 15,
-      "pushed_at": "2010-05-19T03:44:28Z"
+      "pushed_at": "2010-05-19T03:44:28Z",
+      "hidden": false
     },
     "hotchpotch/kawaii-generator": {
       "display_name": "kawaii-generator",
@@ -600,7 +645,8 @@
       ],
       "url": "https://github.com/hotchpotch/kawaii-generator",
       "stars": 2,
-      "pushed_at": "2009-08-01T03:56:12Z"
+      "pushed_at": "2009-08-01T03:56:12Z",
+      "hidden": false
     },
     "hotchpotch/mbed-autowriter": {
       "display_name": "mbed-autowriter",
@@ -613,7 +659,8 @@
       ],
       "url": "https://github.com/hotchpotch/mbed-autowriter",
       "stars": 0,
-      "pushed_at": "2016-02-27T03:55:54Z"
+      "pushed_at": "2016-02-27T03:55:54Z",
+      "hidden": false
     },
     "hotchpotch/mecab-ruby-gem": {
       "display_name": "mecab-ruby-gem",
@@ -626,7 +673,8 @@
       ],
       "url": "https://github.com/hotchpotch/mecab-ruby-gem",
       "stars": 12,
-      "pushed_at": "2012-04-29T10:50:44Z"
+      "pushed_at": "2012-04-29T10:50:44Z",
+      "hidden": true
     },
     "hotchpotch/meta_framework-vim": {
       "display_name": "meta_framework-vim",
@@ -639,7 +687,8 @@
       ],
       "url": "https://github.com/hotchpotch/meta_framework-vim",
       "stars": 4,
-      "pushed_at": "2008-08-06T03:23:33Z"
+      "pushed_at": "2008-08-06T03:23:33Z",
+      "hidden": false
     },
     "hotchpotch/moco": {
       "display_name": "moco",
@@ -652,7 +701,8 @@
       ],
       "url": "https://github.com/hotchpotch/moco",
       "stars": 5,
-      "pushed_at": "2016-03-10T09:32:58Z"
+      "pushed_at": "2016-03-10T09:32:58Z",
+      "hidden": false
     },
     "hotchpotch/ncd_classifier": {
       "display_name": "ncd_classifier",
@@ -666,7 +716,8 @@
       ],
       "url": "https://github.com/hotchpotch/ncd_classifier",
       "stars": 3,
-      "pushed_at": "2023-07-20T20:38:18Z"
+      "pushed_at": "2023-07-20T20:38:18Z",
+      "hidden": false
     },
     "hotchpotch/next-with-typesaurus-example": {
       "display_name": "next-with-typesaurus-example",
@@ -679,7 +730,8 @@
       ],
       "url": "https://github.com/hotchpotch/next-with-typesaurus-example",
       "stars": 0,
-      "pushed_at": "2023-01-06T05:12:25Z"
+      "pushed_at": "2023-01-06T05:12:25Z",
+      "hidden": false
     },
     "hotchpotch/olympus-camera": {
       "display_name": "olympus-camera",
@@ -692,7 +744,8 @@
       ],
       "url": "https://github.com/hotchpotch/olympus-camera",
       "stars": 4,
-      "pushed_at": "2020-11-20T00:16:24Z"
+      "pushed_at": "2020-11-20T00:16:24Z",
+      "hidden": false
     },
     "hotchpotch/olympus-camera-dl": {
       "display_name": "olympus-camera-dl",
@@ -705,7 +758,8 @@
       ],
       "url": "https://github.com/hotchpotch/olympus-camera-dl",
       "stars": 0,
-      "pushed_at": "2020-11-24T00:07:36Z"
+      "pushed_at": "2020-11-24T00:07:36Z",
+      "hidden": false
     },
     "hotchpotch/open_provence": {
       "display_name": "open_provence",
@@ -720,7 +774,8 @@
       ],
       "url": "https://github.com/hotchpotch/open_provence",
       "stars": 65,
-      "pushed_at": "2025-11-22T01:30:13Z"
+      "pushed_at": "2025-11-22T01:30:13Z",
+      "hidden": false
     },
     "hotchpotch/openai-api-server-via-codex": {
       "display_name": "openai-api-server-via-codex",
@@ -733,7 +788,8 @@
       ],
       "url": "https://github.com/hotchpotch/openai-api-server-via-codex",
       "stars": 32,
-      "pushed_at": "2026-08-13T09:53:18Z"
+      "pushed_at": "2026-08-13T09:53:18Z",
+      "hidden": false
     },
     "hotchpotch/perl-acme-momoiroclover": {
       "display_name": "perl-acme-momoiroclover",
@@ -746,7 +802,8 @@
       ],
       "url": "https://github.com/hotchpotch/perl-acme-momoiroclover",
       "stars": 5,
-      "pushed_at": "2019-02-05T05:39:57Z"
+      "pushed_at": "2019-02-05T05:39:57Z",
+      "hidden": false
     },
     "hotchpotch/perldoc-vim": {
       "display_name": "perldoc-vim",
@@ -759,7 +816,8 @@
       ],
       "url": "https://github.com/hotchpotch/perldoc-vim",
       "stars": 44,
-      "pushed_at": "2015-11-20T12:04:24Z"
+      "pushed_at": "2015-11-20T12:04:24Z",
+      "hidden": false
     },
     "hotchpotch/pixoo-spotify": {
       "display_name": "pixoo-spotify",
@@ -772,7 +830,8 @@
       ],
       "url": "https://github.com/hotchpotch/pixoo-spotify",
       "stars": 0,
-      "pushed_at": "2026-08-10T11:09:41Z"
+      "pushed_at": "2026-08-10T11:09:41Z",
+      "hidden": false
     },
     "hotchpotch/pry-clipboard": {
       "display_name": "pry-clipboard",
@@ -785,7 +844,8 @@
       ],
       "url": "https://github.com/hotchpotch/pry-clipboard",
       "stars": 42,
-      "pushed_at": "2012-04-26T01:28:43Z"
+      "pushed_at": "2012-04-26T01:28:43Z",
+      "hidden": false
     },
     "hotchpotch/rack-convert-webp": {
       "display_name": "rack-convert-webp",
@@ -798,7 +858,8 @@
       ],
       "url": "https://github.com/hotchpotch/rack-convert-webp",
       "stars": 2,
-      "pushed_at": "2014-03-20T14:56:42Z"
+      "pushed_at": "2014-03-20T14:56:42Z",
+      "hidden": false
     },
     "hotchpotch/rapids-svr-svc-marc_ja": {
       "display_name": "rapids-svr-svc-marc_ja",
@@ -811,7 +872,8 @@
       ],
       "url": "https://github.com/hotchpotch/rapids-svr-svc-marc_ja",
       "stars": 0,
-      "pushed_at": "2022-12-13T00:27:50Z"
+      "pushed_at": "2022-12-13T00:27:50Z",
+      "hidden": false
     },
     "hotchpotch/rascut": {
       "display_name": "rascut",
@@ -824,7 +886,8 @@
       ],
       "url": "https://github.com/hotchpotch/rascut",
       "stars": 26,
-      "pushed_at": "2013-02-22T07:48:17Z"
+      "pushed_at": "2013-02-22T07:48:17Z",
+      "hidden": false
     },
     "hotchpotch/react-navigation-mobx-example": {
       "display_name": "react-navigation-mobx-example",
@@ -837,7 +900,8 @@
       ],
       "url": "https://github.com/hotchpotch/react-navigation-mobx-example",
       "stars": 52,
-      "pushed_at": "2017-05-13T08:03:15Z"
+      "pushed_at": "2017-05-13T08:03:15Z",
+      "hidden": false
     },
     "hotchpotch/readlists-anonymous": {
       "display_name": "readlists-anonymous",
@@ -850,7 +914,8 @@
       ],
       "url": "https://github.com/hotchpotch/readlists-anonymous",
       "stars": 1,
-      "pushed_at": "2014-01-05T15:23:44Z"
+      "pushed_at": "2014-01-05T15:23:44Z",
+      "hidden": false
     },
     "hotchpotch/rmagick-1.15.17-no-rdoc": {
       "display_name": "rmagick-1.15.17-no-rdoc",
@@ -863,7 +928,8 @@
       ],
       "url": "https://github.com/hotchpotch/rmagick-1.15.17-no-rdoc",
       "stars": 2,
-      "pushed_at": "2011-04-13T09:09:59Z"
+      "pushed_at": "2011-04-13T09:09:59Z",
+      "hidden": false
     },
     "hotchpotch/ruboty-aa": {
       "display_name": "ruboty-aa",
@@ -876,7 +942,8 @@
       ],
       "url": "https://github.com/hotchpotch/ruboty-aa",
       "stars": 3,
-      "pushed_at": "2014-09-03T07:35:58Z"
+      "pushed_at": "2014-09-03T07:35:58Z",
+      "hidden": false
     },
     "hotchpotch/rubyistokei-ios-motion": {
       "display_name": "rubyistokei-ios-motion",
@@ -889,7 +956,8 @@
       ],
       "url": "https://github.com/hotchpotch/rubyistokei-ios-motion",
       "stars": 4,
-      "pushed_at": "2013-12-23T08:00:40Z"
+      "pushed_at": "2013-12-23T08:00:40Z",
+      "hidden": false
     },
     "hotchpotch/secon-dev-auto-title-vibe-cording": {
       "display_name": "secon-dev-auto-title-vibe-cording",
@@ -902,7 +970,8 @@
       ],
       "url": "https://github.com/hotchpotch/secon-dev-auto-title-vibe-cording",
       "stars": 0,
-      "pushed_at": "2025-04-21T07:11:24Z"
+      "pushed_at": "2025-04-21T07:11:24Z",
+      "hidden": true
     },
     "hotchpotch/secon-dev-n-year-summary": {
       "display_name": "secon-dev-n-year-summary",
@@ -915,7 +984,8 @@
       ],
       "url": "https://github.com/hotchpotch/secon-dev-n-year-summary",
       "stars": 0,
-      "pushed_at": "2024-01-16T08:39:44Z"
+      "pushed_at": "2024-01-16T08:39:44Z",
+      "hidden": true
     },
     "hotchpotch/shakyo-kozos": {
       "display_name": "shakyo-kozos",
@@ -928,7 +998,8 @@
       ],
       "url": "https://github.com/hotchpotch/shakyo-kozos",
       "stars": 0,
-      "pushed_at": "2016-09-07T11:36:09Z"
+      "pushed_at": "2016-09-07T11:36:09Z",
+      "hidden": false
     },
     "hotchpotch/similar-documents-cli": {
       "display_name": "similar-documents-cli",
@@ -941,7 +1012,8 @@
       ],
       "url": "https://github.com/hotchpotch/similar-documents-cli",
       "stars": 8,
-      "pushed_at": "2021-05-31T06:07:33Z"
+      "pushed_at": "2021-05-31T06:07:33Z",
+      "hidden": false
     },
     "hotchpotch/sketch": {
       "display_name": "sketch",
@@ -954,7 +1026,8 @@
       ],
       "url": "https://github.com/hotchpotch/sketch",
       "stars": 1,
-      "pushed_at": "2009-07-22T09:37:49Z"
+      "pushed_at": "2009-07-22T09:37:49Z",
+      "hidden": false
     },
     "hotchpotch/sql-abstract-javascript": {
       "display_name": "sql-abstract-javascript",
@@ -967,7 +1040,8 @@
       ],
       "url": "https://github.com/hotchpotch/sql-abstract-javascript",
       "stars": 11,
-      "pushed_at": "2010-02-25T11:58:28Z"
+      "pushed_at": "2010-02-25T11:58:28Z",
+      "hidden": false
     },
     "hotchpotch/sqlite-vaporetto": {
       "display_name": "sqlite-vaporetto",
@@ -981,7 +1055,8 @@
       ],
       "url": "https://github.com/hotchpotch/sqlite-vaporetto",
       "stars": 20,
-      "pushed_at": "2026-04-30T08:41:46Z"
+      "pushed_at": "2026-04-30T08:41:46Z",
+      "hidden": false
     },
     "hotchpotch/tempdir": {
       "display_name": "tempdir",
@@ -994,7 +1069,8 @@
       ],
       "url": "https://github.com/hotchpotch/tempdir",
       "stars": 4,
-      "pushed_at": "2011-10-02T23:42:43Z"
+      "pushed_at": "2011-10-02T23:42:43Z",
+      "hidden": false
     },
     "hotchpotch/test2": {
       "display_name": "test2",
@@ -1007,7 +1083,8 @@
       ],
       "url": "https://github.com/hotchpotch/test2",
       "stars": 1,
-      "pushed_at": null
+      "pushed_at": null,
+      "hidden": true
     },
     "hotchpotch/test_hotchpotch": {
       "display_name": "test_hotchpotch",
@@ -1020,7 +1097,8 @@
       ],
       "url": "https://github.com/hotchpotch/test_hotchpotch",
       "stars": 2,
-      "pushed_at": "2009-09-24T08:27:26Z"
+      "pushed_at": "2009-09-24T08:27:26Z",
+      "hidden": true
     },
     "hotchpotch/ThisIsTest": {
       "display_name": "ThisIsTest",
@@ -1033,7 +1111,8 @@
       ],
       "url": "https://github.com/hotchpotch/ThisIsTest",
       "stars": 0,
-      "pushed_at": "2013-03-04T10:52:30Z"
+      "pushed_at": "2013-03-04T10:52:30Z",
+      "hidden": true
     },
     "hotchpotch/trn": {
       "display_name": "trn",
@@ -1046,7 +1125,8 @@
       ],
       "url": "https://github.com/hotchpotch/trn",
       "stars": 8,
-      "pushed_at": "2026-08-06T01:16:31Z"
+      "pushed_at": "2026-08-06T01:16:31Z",
+      "hidden": false
     },
     "hotchpotch/uffy": {
       "display_name": "uffy",
@@ -1059,7 +1139,8 @@
       ],
       "url": "https://github.com/hotchpotch/uffy",
       "stars": 8,
-      "pushed_at": "2008-07-18T13:39:28Z"
+      "pushed_at": "2008-07-18T13:39:28Z",
+      "hidden": false
     },
     "hotchpotch/vim-rails": {
       "display_name": "vim-rails",
@@ -1072,7 +1153,8 @@
       ],
       "url": "https://github.com/hotchpotch/vim-rails",
       "stars": 4,
-      "pushed_at": "2008-07-16T02:09:12Z"
+      "pushed_at": "2008-07-16T02:09:12Z",
+      "hidden": false
     },
     "hotchpotch/WebdbReactNativeExample": {
       "display_name": "WebdbReactNativeExample",
@@ -1085,7 +1167,8 @@
       ],
       "url": "https://github.com/hotchpotch/WebdbReactNativeExample",
       "stars": 1,
-      "pushed_at": "2017-11-29T00:27:13Z"
+      "pushed_at": "2017-11-29T00:27:13Z",
+      "hidden": false
     },
     "hotchpotch/wikipedia-passages-jawiki-embeddings-utils": {
       "display_name": "wikipedia-passages-jawiki-embeddings-utils",
@@ -1098,7 +1181,8 @@
       ],
       "url": "https://github.com/hotchpotch/wikipedia-passages-jawiki-embeddings-utils",
       "stars": 12,
-      "pushed_at": "2024-03-28T23:18:54Z"
+      "pushed_at": "2024-03-28T23:18:54Z",
+      "hidden": false
     },
     "hotchpotch/YA-BiseiTokei-android": {
       "display_name": "YA-BiseiTokei-android",
@@ -1111,7 +1195,8 @@
       ],
       "url": "https://github.com/hotchpotch/YA-BiseiTokei-android",
       "stars": 2,
-      "pushed_at": "2010-02-12T15:54:52Z"
+      "pushed_at": "2010-02-12T15:54:52Z",
+      "hidden": false
     },
     "hotchpotch/yasem": {
       "display_name": "yasem",
@@ -1124,7 +1209,8 @@
       ],
       "url": "https://github.com/hotchpotch/yasem",
       "stars": 13,
-      "pushed_at": "2025-05-22T00:22:29Z"
+      "pushed_at": "2025-05-22T00:22:29Z",
+      "hidden": false
     },
     "hotchpotch/yast": {
       "display_name": "yast",
@@ -1138,7 +1224,8 @@
       ],
       "url": "https://github.com/hotchpotch/yast",
       "stars": 21,
-      "pushed_at": "2025-06-16T23:47:31Z"
+      "pushed_at": "2025-06-16T23:47:31Z",
+      "hidden": false
     },
     "hotchpotch/youri-7b-sft-qa-context-jaqket": {
       "display_name": "youri-7b-sft-qa-context-jaqket",
@@ -1152,7 +1239,8 @@
       ],
       "url": "https://github.com/hotchpotch/youri-7b-sft-qa-context-jaqket",
       "stars": 2,
-      "pushed_at": "2024-02-24T22:49:07Z"
+      "pushed_at": "2024-02-24T22:49:07Z",
+      "hidden": false
     }
   }
 }

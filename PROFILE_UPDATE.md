@@ -59,8 +59,19 @@ Each `repos.json` entry contains:
 
 - `display_name`, one distinctive `emoji`, and a curated English `description`
 - `japan_focused`, which adds 🇯🇵 before the description
-- `category` and `profile_topics`
+- `category`, `profile_topics`, and the boolean `hidden` display control
 - synchronized `url`, `stars`, and `pushed_at` values
+
+Set `hidden` to `true` when a public repository should remain tracked and
+privacy-verified but should not appear in the README. Hidden repositories stay
+in `repos.json` and continue receiving dynamic metadata updates.
+
+Apply `hidden: true` to:
+
+- `duckdb-vaporetto-wasm-demo`, `mecab-ruby-gem`, `hotchpotch`, `hparser`,
+  `bin`, and `Aground-ja_JP-translation`
+- repository names beginning with `secon-dev-`
+- repository names containing `test`, case-insensitively
 
 Descriptions must contain 5–10 English words. Inline code such as `` `Rust` ``
 is allowed. Emojis must be unique. Repository lines use this format:
@@ -146,9 +157,9 @@ For every periodic update, follow this process:
    `git add repos.json README.md`.
 4. Inspect the staged diff with `git diff --cached -- repos.json README.md`.
    Check repository membership, emoji uniqueness, 5–10 word English
-   descriptions, Japan flags, categories, star ordering, and older project
-   boundary. In particular, verify that no private repository or private
-   information appears.
+   descriptions, Japan flags, hidden flags, categories, star ordering, and
+   older project boundary. In particular, verify that no private repository or
+   private information appears.
 5. If any problem is found, do not commit. Fix the classification or updater,
    regenerate the README, stage it again, and repeat the review.
 6. Only after determining that the staged result is correct, stage any other

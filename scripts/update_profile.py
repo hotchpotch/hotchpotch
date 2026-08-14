@@ -97,6 +97,7 @@ def validate_curated_metadata(repositories: dict[str, Any]) -> None:
         "japan_focused",
         "category",
         "profile_topics",
+        "hidden",
         "url",
         "stars",
         "pushed_at",
@@ -126,6 +127,8 @@ def validate_curated_metadata(repositories: dict[str, Any]) -> None:
         seen_emojis[emoji] = full_name
         if metadata["category"] not in {"nlp-ai", "tools"}:
             raise RuntimeError(f"repos.json entry {full_name} has an invalid category")
+        if not isinstance(metadata["hidden"], bool):
+            raise RuntimeError(f"repos.json entry {full_name} has an invalid hidden flag")
         topics = set(metadata["profile_topics"])
         if not topics or not topics <= PROFILE_TOPICS:
             raise RuntimeError(f"repos.json entry {full_name} has invalid profile topics")
@@ -239,7 +242,7 @@ def five_year_cutoff(today: dt.date) -> dt.date:
 
 def render_repository_block(configured: dict[str, Any], today: dt.date) -> str:
     cutoff = five_year_cutoff(today).isoformat()
-    items = list(configured.items())
+    items = [item for item in configured.items() if not item[1]["hidden"]]
     topical = [item for item in items if item[1]["category"] == "nlp-ai"]
     tools = [item for item in items if item[1]["category"] == "tools"]
     active_tools = [

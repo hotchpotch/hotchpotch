@@ -20,7 +20,6 @@
 - 🎯 **[yast](https://github.com/hotchpotch/yast)** (21 stars) - Train sparse retrieval models with `SPLADE`.
 - 🗄️ **[sqlite-vaporetto](https://github.com/hotchpotch/sqlite-vaporetto)** (20 stars) - 🇯🇵 Japanese full-text search for `SQLite FTS5`.
 - 🌱 **[yasem](https://github.com/hotchpotch/yasem)** (13 stars) - Simple efficient library for sparse `SPLADE` embeddings.
-- 💎 **[mecab-ruby-gem](https://github.com/hotchpotch/mecab-ruby-gem)** (12 stars) - 🇯🇵 Package MeCab Japanese tokenization bindings for Ruby.
 - 🧠 **[wikipedia-passages-jawiki-embeddings-utils](https://github.com/hotchpotch/wikipedia-passages-jawiki-embeddings-utils)** (12 stars) - 🇯🇵 Build Japanese Wikipedia embeddings and `FAISS` indexes.
 - 🦆 **[duckdb-vaporetto](https://github.com/hotchpotch/duckdb-vaporetto)** (11 stars) - 🇯🇵 Japanese full-text search extension for `DuckDB`.
 - 🧭 **[JaCWIR](https://github.com/hotchpotch/JaCWIR)** - 🇯🇵 Casual Japanese web retrieval evaluation dataset.
@@ -29,19 +28,15 @@
 - 🗜️ **[ncd_classifier](https://github.com/hotchpotch/ncd_classifier)** - Classify text using compression distance without parameters.
 - 🧑‍🏫 **[youri-7b-sft-qa-context-jaqket](https://github.com/hotchpotch/youri-7b-sft-qa-context-jaqket)** - 🇯🇵 Fine-tune Japanese QA models with retrieval context.
 - 🎓 **[fineweb-2-edu-japanese-classifier](https://github.com/hotchpotch/fineweb-2-edu-japanese-classifier)** - 🇯🇵 Score educational quality in Japanese web content.
-- 🕸️ **[duckdb-vaporetto-wasm-demo](https://github.com/hotchpotch/duckdb-vaporetto-wasm-demo)** - 🇯🇵 Japanese `DuckDB` search running directly in browsers.
 
 ## Tools & Other Projects
 
 - 🔌 **[openai-api-server-via-codex](https://github.com/hotchpotch/openai-api-server-via-codex)** (32 stars) - Serve an OpenAI-compatible API through `Codex`.
 - 🏗️ **[hatena-group-static-generator](https://github.com/hotchpotch/hatena-group-static-generator)** - 🇯🇵 Export Hatena Group content as static pages.
 - 👆 **[herdr-tiny-fingers](https://github.com/hotchpotch/herdr-tiny-fingers)** - Copy visible terminal text using keyboard hints.
-- 🪪 **[hotchpotch](https://github.com/hotchpotch/hotchpotch)** - Source files for this GitHub profile page.
 - 🦕 **[next-with-typesaurus-example](https://github.com/hotchpotch/next-with-typesaurus-example)** - Example Next.js application using typed Firestore access.
 - 🖼️ **[pixoo-spotify](https://github.com/hotchpotch/pixoo-spotify)** - Display Spotify artwork on a Pixoo screen.
 - 🚀 **[rapids-svr-svc-marc_ja](https://github.com/hotchpotch/rapids-svr-svc-marc_ja)** - 🇯🇵 Train accelerated classifiers on Japanese MARC records.
-- 🏷️ **[secon-dev-auto-title-vibe-cording](https://github.com/hotchpotch/secon-dev-auto-title-vibe-cording)** - 🇯🇵 Generate missing Japanese blog post titles automatically.
-- 🗓️ **[secon-dev-n-year-summary](https://github.com/hotchpotch/secon-dev-n-year-summary)** - 🇯🇵 Summarize multiple years of Japanese blog archives.
 
 <details>
 <summary><strong>Older projects</strong> — not updated in the last five years</summary>
@@ -55,7 +50,6 @@
 - 🧩 **[chrome-extension-starter](https://github.com/hotchpotch/chrome-extension-starter)** (26 stars) - Minimal starter template for Google Chrome extensions.
 - ✂️ **[rascut](https://github.com/hotchpotch/rascut)** (26 stars) - Ruby utilities for building ActionScript projects quickly.
 - 🧱 **[activerecord-raw-data](https://github.com/hotchpotch/activerecord-raw-data)** (22 stars) - Access uncast database values from `ActiveRecord` models.
-- 📜 **[hparser](https://github.com/hotchpotch/hparser)** (22 stars) - 🇯🇵 Parse legacy Hatena markup syntax with Ruby.
 - 📝 **[dotfiles-vim](https://github.com/hotchpotch/dotfiles-vim)** (19 stars) - Personal Vim configuration and editor customizations.
 - 🎄 **[advent-calendar2readlists](https://github.com/hotchpotch/advent-calendar2readlists)** (16 stars) - 🇯🇵 Convert Advent Calendar entries into readable lists.
 - 🚂 **[as3rails2u](https://github.com/hotchpotch/as3rails2u)** (16 stars) - Reusable ActionScript helpers for Rails-oriented applications.
@@ -83,7 +77,6 @@
 - 🔄 **[digit_convertor](https://github.com/hotchpotch/digit_convertor)** - Convert numeric digits between common display formats.
 - 💬 **[ruboty-aa](https://github.com/hotchpotch/ruboty-aa)** - 🇯🇵 Generate ASCII art through a Ruboty plugin.
 - 🎞️ **[anigif2png-js](https://github.com/hotchpotch/anigif2png-js)** - Convert animated GIF data into PNG frames.
-- 🧰 **[bin](https://github.com/hotchpotch/bin)** - Personal command-line scripts collected for daily work.
 - ☁️ **[elastic-mapreduce](https://github.com/hotchpotch/elastic-mapreduce)** - Unofficial Ruby client for Amazon Elastic MapReduce.
 - 📸 **[google-photo-downloader-w-hatena](https://github.com/hotchpotch/google-photo-downloader-w-hatena)** - 🇯🇵 Migrate Google Photos images into Hatena services.
 - ⭐ **[hatena-star-autopageload-googlechrome](https://github.com/hotchpotch/hatena-star-autopageload-googlechrome)** - 🇯🇵 Automatically load Hatena Stars inside Google Chrome.
@@ -92,13 +85,10 @@
 - 🌸 **[kawaii-generator](https://github.com/hotchpotch/kawaii-generator)** - 🇯🇵 Generate playful Japanese kawaii graphics with ActionScript.
 - 🖌️ **[rack-convert-webp](https://github.com/hotchpotch/rack-convert-webp)** - Convert served images into WebP through Rack.
 - 🧙 **[rmagick-1.15.17-no-rdoc](https://github.com/hotchpotch/rmagick-1.15.17-no-rdoc)** - Package legacy RMagick without generated documentation.
-- 🔬 **[test_hotchpotch](https://github.com/hotchpotch/test_hotchpotch)** - Personal test repository for small GitHub experiments.
 - ⏰ **[YA-BiseiTokei-android](https://github.com/hotchpotch/YA-BiseiTokei-android)** - 🇯🇵 Android companion app for a Japanese voice clock.
-- 🎮 **[Aground-ja_JP-translation](https://github.com/hotchpotch/Aground-ja_JP-translation)** - 🇯🇵 Japanese translation patch for the game `Aground`.
 - 😀 **[emoji-ime-dictionary-ascii](https://github.com/hotchpotch/emoji-ime-dictionary-ascii)** - 🇯🇵 Type emoji names through Japanese input methods.
 - 📚 **[readlists-anonymous](https://github.com/hotchpotch/readlists-anonymous)** - Access Readlists APIs without authenticated user sessions.
 - ✏️ **[sketch](https://github.com/hotchpotch/sketch)** - Personal experimental sketches and small code fragments.
-- 🧪 **[test2](https://github.com/hotchpotch/test2)** - Minimal sandbox for testing GitHub repository behavior.
 - 📱 **[WebdbReactNativeExample](https://github.com/hotchpotch/WebdbReactNativeExample)** - 🇯🇵 React Native examples for WEB+DB PRESS readers.
 - 🀄 **[baidu-translate-api-ruby](https://github.com/hotchpotch/baidu-translate-api-ruby)** - Ruby client for the Baidu Translate API.
 - 💡 **[hue_ir_receiver](https://github.com/hotchpotch/hue_ir_receiver)** - Control Philips Hue lights from infrared signals.
@@ -106,7 +96,6 @@
 - ✍️ **[mbed-autowriter](https://github.com/hotchpotch/mbed-autowriter)** - Automate source updates for online `mbed` projects.
 - 📥 **[olympus-camera-dl](https://github.com/hotchpotch/olympus-camera-dl)** - Download Olympus camera photos directly over Wi-Fi.
 - 🛕 **[shakyo-kozos](https://github.com/hotchpotch/shakyo-kozos)** - 🇯🇵 Code transcription exercises using classic software structures.
-- 🧫 **[ThisIsTest](https://github.com/hotchpotch/ThisIsTest)** - Small repository for testing GitHub project workflows.
 
 </details>
 <!-- profile-repositories:end -->
