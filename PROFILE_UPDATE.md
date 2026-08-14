@@ -1,8 +1,9 @@
 # GitHub Profile Update Guide
 
-This repository is the source of the `hotchpotch` GitHub profile page. The
-existing introduction in `README.md` is preserved, while the repository lists
-inside the managed marker block are regenerated from GitHub metadata.
+This repository is the source of the `hotchpotch` GitHub profile page.
+`repos.json` stores curated presentation metadata, while
+`scripts/update_profile.py` synchronizes public GitHub facts and regenerates
+`README.md`.
 
 ## Non-negotiable privacy rule
 
@@ -42,29 +43,34 @@ Each public source repository receives one or more profile topics:
 - `tools`
 
 Existing GitHub topics are preserved. The updater only adds missing profile
-topics. Explicit decisions live in `TOPIC_OVERRIDES` in
-`scripts/update_profile.py`; these overrides take priority over keyword rules.
+topics listed in each repository's `profile_topics` field in `repos.json`.
 
 Public repositories maintained outside the `hotchpotch` account must be added
-explicitly to the `EXTERNAL_REPOSITORIES` allowlist. Each allowlisted repository
-is fetched separately with `gh repo view` and must pass the same
-`isPrivate == false` check before it is accepted. The current external NLP
-project is `hakari-bench/hakari-bench`.
+explicitly to `repos.json`. Each external entry is fetched separately with
+`gh repo view` and must pass the same `isPrivate == false` check before it is
+accepted. The current external NLP project is `hakari-bench/hakari-bench`.
 
-Whenever a new public project is created, consider which of the profile topics
-best describe it and add the appropriate topics. Do this before the next
-profile update when practical; otherwise, carefully review the updater's
-proposed classification during the preview step.
+Whenever a new public project is created, add a curated `repos.json` entry and
+consider which profile topics best describe it. The updater intentionally
+fails when a public repository has no curated entry, preventing unreviewed
+GitHub descriptions from reaching the profile.
 
-Current explicit decisions:
+Each `repos.json` entry contains:
 
-- `Aground-ja_JP-translation` is Tools / Other.
-- `baidu-translate-api-ruby` is Tools / Other.
-- `openai-api-server-via-codex` is Tools / Other.
+- `display_name`, one distinctive `emoji`, and a curated English `description`
+- `japan_focused`, which adds 🇯🇵 before the description
+- `category` and `profile_topics`
+- synchronized `url`, `stars`, and `pushed_at` values
 
-Repository lists are sorted by GitHub stars descending, then by repository name
-for equal star counts. Repositories without descriptions do not receive a
-placeholder description.
+Descriptions must contain 5–10 English words. Inline code such as `` `Rust` ``
+is allowed. Emojis must be unique. Repository lines use this format:
+
+```text
+{emoji} {linked display name} ({N stars}, when N > 10) - {🇯🇵 when applicable} {description}
+```
+
+Repository lists are sorted by GitHub stars descending, then by display name.
+Star counts of 10 or fewer are omitted from the rendered README.
 
 The README sections are:
 
@@ -91,8 +97,8 @@ prints the topics that would be added. It does not change GitHub or the README.
 python3 scripts/update_profile.py
 ```
 
-Review the proposed classifications. If a repository is misclassified, add an
-entry to `TOPIC_OVERRIDES`, rerun the preview, and review it again.
+Review the proposed classifications. If a repository is missing or
+misclassified, edit `repos.json`, rerun the preview, and review it again.
 
 Apply missing GitHub topics:
 
@@ -100,7 +106,7 @@ Apply missing GitHub topics:
 python3 scripts/update_profile.py --apply-topics
 ```
 
-Regenerate the managed repository block in `README.md`:
+Synchronize stars and push dates in `repos.json`, then regenerate `README.md`:
 
 ```console
 python3 scripts/update_profile.py --write
@@ -113,7 +119,7 @@ runs replace only the content between those markers.
 Inspect the result before committing:
 
 ```console
-git diff -- README.md PROFILE_UPDATE.md scripts/update_profile.py
+git diff -- README.md repos.json PROFILE_UPDATE.md scripts/update_profile.py
 ```
 
 For a reproducible preview with a specific date:
@@ -136,11 +142,13 @@ For every periodic update, follow this process:
 1. Run the updater according to this guide and inspect its complete output.
 2. Confirm that the public-only verification passed and review every proposed
    topic change.
-3. Regenerate `README.md` and stage it with `git add README.md`.
-4. Inspect the staged diff with `git diff --cached -- README.md`. Check the
-   repository membership, categories, descriptions, star ordering, older
-   project boundary, and update date. In particular, verify that no private
-   repository or private information appears.
+3. Regenerate `repos.json` and `README.md`, then stage both with
+   `git add repos.json README.md`.
+4. Inspect the staged diff with `git diff --cached -- repos.json README.md`.
+   Check repository membership, emoji uniqueness, 5–10 word English
+   descriptions, Japan flags, categories, star ordering, older project
+   boundary, and update date. In particular, verify that no private repository
+   or private information appears.
 5. If any problem is found, do not commit. Fix the classification or updater,
    regenerate the README, stage it again, and repeat the review.
 6. Only after determining that the staged result is correct, stage any other
@@ -152,8 +160,8 @@ For example:
 ```console
 python3 scripts/update_profile.py
 python3 scripts/update_profile.py --write
-git add README.md
-git diff --cached -- README.md
+git add repos.json README.md
+git diff --cached -- repos.json README.md
 git commit -m "Update GitHub profile repositories"
 git push
 ```

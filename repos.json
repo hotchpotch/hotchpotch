@@ -1,0 +1,1158 @@
+{
+  "schema_version": 1,
+  "repositories": {
+    "hakari-bench/hakari-bench": {
+      "display_name": "HAKARI-Bench",
+      "emoji": "⚖️",
+      "description": "Lightweight nano-scale benchmark for retrieval model decisions.",
+      "japan_focused": false,
+      "category": "nlp-ai",
+      "profile_topics": [
+        "nlp"
+      ],
+      "url": "https://github.com/hakari-bench/hakari-bench",
+      "stars": 30,
+      "pushed_at": "2026-08-12T04:09:56Z"
+    },
+    "hotchpotch/activerecord-raw-data": {
+      "display_name": "activerecord-raw-data",
+      "emoji": "🧱",
+      "description": "Access uncast database values from `ActiveRecord` models.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/activerecord-raw-data",
+      "stars": 22,
+      "pushed_at": "2015-10-09T00:08:56Z"
+    },
+    "hotchpotch/advent-calendar2readlists": {
+      "display_name": "advent-calendar2readlists",
+      "emoji": "🎄",
+      "description": "Convert Advent Calendar entries into readable lists.",
+      "japan_focused": true,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/advent-calendar2readlists",
+      "stars": 16,
+      "pushed_at": "2014-01-14T05:45:59Z"
+    },
+    "hotchpotch/Aground-ja_JP-translation": {
+      "display_name": "Aground-ja_JP-translation",
+      "emoji": "🎮",
+      "description": "Japanese translation patch for the game `Aground`.",
+      "japan_focused": true,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/Aground-ja_JP-translation",
+      "stars": 1,
+      "pushed_at": "2020-04-28T10:51:42Z"
+    },
+    "hotchpotch/android-IconicFontEngine": {
+      "display_name": "android-IconicFontEngine",
+      "emoji": "🔤",
+      "description": "Render icon fonts conveniently inside Android applications.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/android-IconicFontEngine",
+      "stars": 29,
+      "pushed_at": "2015-08-28T02:31:10Z"
+    },
+    "hotchpotch/anigif2png-js": {
+      "display_name": "anigif2png-js",
+      "emoji": "🎞️",
+      "description": "Convert animated GIF data into PNG frames.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/anigif2png-js",
+      "stars": 2,
+      "pushed_at": "2009-01-13T12:01:24Z"
+    },
+    "hotchpotch/Arduino-HDC1000": {
+      "display_name": "Arduino-HDC1000",
+      "emoji": "🌡️",
+      "description": "Arduino library for HDC1000 environmental sensors.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/Arduino-HDC1000",
+      "stars": 4,
+      "pushed_at": "2015-12-14T09:18:43Z"
+    },
+    "hotchpotch/Arduino-i2cdetect": {
+      "display_name": "Arduino-i2cdetect",
+      "emoji": "📡",
+      "description": "Scan connected devices on Arduino `I2C` buses.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/Arduino-i2cdetect",
+      "stars": 5,
+      "pushed_at": "2017-03-17T02:05:46Z"
+    },
+    "hotchpotch/Arduino-SN74141": {
+      "display_name": "Arduino-SN74141",
+      "emoji": "🔢",
+      "description": "Arduino driver for SN74141 Nixie tube controllers.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/Arduino-SN74141",
+      "stars": 4,
+      "pushed_at": "2015-10-20T14:18:51Z"
+    },
+    "hotchpotch/as3rails2u": {
+      "display_name": "as3rails2u",
+      "emoji": "🚂",
+      "description": "Reusable ActionScript helpers for Rails-oriented applications.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/as3rails2u",
+      "stars": 16,
+      "pushed_at": "2008-04-28T08:57:24Z"
+    },
+    "hotchpotch/atok-direct-google-moshikashite": {
+      "display_name": "atok-direct-google-moshikashite",
+      "emoji": "🔎",
+      "description": "Google suggestion plugin for Japanese `ATOK` input.",
+      "japan_focused": true,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/atok-direct-google-moshikashite",
+      "stars": 4,
+      "pushed_at": "2009-07-31T16:58:12Z"
+    },
+    "hotchpotch/baidu-translate-api-ruby": {
+      "display_name": "baidu-translate-api-ruby",
+      "emoji": "🀄",
+      "description": "Ruby client for the Baidu Translate API.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/baidu-translate-api-ruby",
+      "stars": 0,
+      "pushed_at": "2018-08-08T10:22:45Z"
+    },
+    "hotchpotch/beko-translate": {
+      "display_name": "beko-translate",
+      "emoji": "📖",
+      "description": "Native Mac translation for text and PDFs.",
+      "japan_focused": true,
+      "category": "nlp-ai",
+      "profile_topics": [
+        "nlp"
+      ],
+      "url": "https://github.com/hotchpotch/beko-translate",
+      "stars": 36,
+      "pushed_at": "2026-03-25T10:42:49Z"
+    },
+    "hotchpotch/bin": {
+      "display_name": "bin",
+      "emoji": "🧰",
+      "description": "Personal command-line scripts collected for daily work.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/bin",
+      "stars": 2,
+      "pushed_at": "2008-07-02T04:02:03Z"
+    },
+    "hotchpotch/chrome-extension-starter": {
+      "display_name": "chrome-extension-starter",
+      "emoji": "🧩",
+      "description": "Minimal starter template for Google Chrome extensions.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/chrome-extension-starter",
+      "stars": 26,
+      "pushed_at": "2009-09-28T05:09:16Z"
+    },
+    "hotchpotch/digit_convertor": {
+      "display_name": "digit_convertor",
+      "emoji": "🔄",
+      "description": "Convert numeric digits between common display formats.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/digit_convertor",
+      "stars": 3,
+      "pushed_at": "2013-07-11T05:04:54Z"
+    },
+    "hotchpotch/dotfiles-vim": {
+      "display_name": "dotfiles-vim",
+      "emoji": "📝",
+      "description": "Personal Vim configuration and editor customizations.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/dotfiles-vim",
+      "stars": 19,
+      "pushed_at": "2014-01-07T08:55:23Z"
+    },
+    "hotchpotch/duckdb-vaporetto": {
+      "display_name": "duckdb-vaporetto",
+      "emoji": "🦆",
+      "description": "Japanese full-text search extension for `DuckDB`.",
+      "japan_focused": true,
+      "category": "nlp-ai",
+      "profile_topics": [
+        "information-retrieval",
+        "nlp"
+      ],
+      "url": "https://github.com/hotchpotch/duckdb-vaporetto",
+      "stars": 11,
+      "pushed_at": "2026-04-30T08:47:43Z"
+    },
+    "hotchpotch/duckdb-vaporetto-wasm-demo": {
+      "display_name": "duckdb-vaporetto-wasm-demo",
+      "emoji": "🕸️",
+      "description": "Japanese `DuckDB` search running directly in browsers.",
+      "japan_focused": true,
+      "category": "nlp-ai",
+      "profile_topics": [
+        "information-retrieval",
+        "nlp"
+      ],
+      "url": "https://github.com/hotchpotch/duckdb-vaporetto-wasm-demo",
+      "stars": 0,
+      "pushed_at": "2026-04-25T12:34:29Z"
+    },
+    "hotchpotch/elastic-mapreduce": {
+      "display_name": "elastic-mapreduce",
+      "emoji": "☁️",
+      "description": "Unofficial Ruby client for Amazon Elastic MapReduce.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/elastic-mapreduce",
+      "stars": 2,
+      "pushed_at": "2012-01-12T08:43:13Z"
+    },
+    "hotchpotch/emoji-ime-dictionary-ascii": {
+      "display_name": "emoji-ime-dictionary-ascii",
+      "emoji": "😀",
+      "description": "Type emoji names through Japanese input methods.",
+      "japan_focused": true,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/emoji-ime-dictionary-ascii",
+      "stars": 1,
+      "pushed_at": "2020-05-29T10:25:36Z"
+    },
+    "hotchpotch/faraday_middleware-msgpack": {
+      "display_name": "faraday_middleware-msgpack",
+      "emoji": "📦",
+      "description": "MessagePack middleware integration for Ruby `Faraday`.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/faraday_middleware-msgpack",
+      "stars": 5,
+      "pushed_at": "2014-06-04T23:22:25Z"
+    },
+    "hotchpotch/fast-bunkai": {
+      "display_name": "fast-bunkai",
+      "emoji": "⚡",
+      "description": "Fast Japanese sentence splitting powered by `Rust`.",
+      "japan_focused": true,
+      "category": "nlp-ai",
+      "profile_topics": [
+        "nlp"
+      ],
+      "url": "https://github.com/hotchpotch/fast-bunkai",
+      "stars": 75,
+      "pushed_at": "2025-10-14T07:58:24Z"
+    },
+    "hotchpotch/fineweb-2-edu-japanese-classifier": {
+      "display_name": "fineweb-2-edu-japanese-classifier",
+      "emoji": "🎓",
+      "description": "Score educational quality in Japanese web content.",
+      "japan_focused": true,
+      "category": "nlp-ai",
+      "profile_topics": [
+        "machine-learning"
+      ],
+      "url": "https://github.com/hotchpotch/fineweb-2-edu-japanese-classifier",
+      "stars": 1,
+      "pushed_at": "2025-02-20T05:41:15Z"
+    },
+    "hotchpotch/fluent-plugin-graphite": {
+      "display_name": "fluent-plugin-graphite",
+      "emoji": "📈",
+      "description": "Forward Fluentd metrics into Graphite monitoring systems.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/fluent-plugin-graphite",
+      "stars": 9,
+      "pushed_at": "2012-08-03T08:37:27Z"
+    },
+    "hotchpotch/fluent-plugin-resque": {
+      "display_name": "fluent-plugin-resque",
+      "emoji": "📬",
+      "description": "Send Fluentd events through Resque background jobs.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/fluent-plugin-resque",
+      "stars": 8,
+      "pushed_at": "2017-04-27T05:38:41Z"
+    },
+    "hotchpotch/fluent_interface": {
+      "display_name": "fluent_interface",
+      "emoji": "🗣️",
+      "description": "Build fluent method chains in Ruby modules.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/fluent_interface",
+      "stars": 4,
+      "pushed_at": "2008-07-08T15:33:41Z"
+    },
+    "hotchpotch/GlitchKit": {
+      "display_name": "GlitchKit",
+      "emoji": "🌈",
+      "description": "Create visual glitch effects for Objective-C apps.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/GlitchKit",
+      "stars": 36,
+      "pushed_at": "2014-01-29T04:29:08Z"
+    },
+    "hotchpotch/google-photo-downloader-w-hatena": {
+      "display_name": "google-photo-downloader-w-hatena",
+      "emoji": "📸",
+      "description": "Migrate Google Photos images into Hatena services.",
+      "japan_focused": true,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/google-photo-downloader-w-hatena",
+      "stars": 2,
+      "pushed_at": "2020-08-03T00:37:06Z"
+    },
+    "hotchpotch/hatena-blog-entry-mlt-example": {
+      "display_name": "hatena-blog-entry-mlt-example",
+      "emoji": "📰",
+      "description": "Example related-entry search for Hatena Blog posts.",
+      "japan_focused": true,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/hatena-blog-entry-mlt-example",
+      "stars": 4,
+      "pushed_at": "2014-09-11T10:17:11Z"
+    },
+    "hotchpotch/hatena-group-static-generator": {
+      "display_name": "hatena-group-static-generator",
+      "emoji": "🏗️",
+      "description": "Export Hatena Group content as static pages.",
+      "japan_focused": true,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/hatena-group-static-generator",
+      "stars": 6,
+      "pushed_at": "2021-10-06T21:21:30Z"
+    },
+    "hotchpotch/hatena-star-autopageload-googlechrome": {
+      "display_name": "hatena-star-autopageload-googlechrome",
+      "emoji": "⭐",
+      "description": "Automatically load Hatena Stars inside Google Chrome.",
+      "japan_focused": true,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/hatena-star-autopageload-googlechrome",
+      "stars": 2,
+      "pushed_at": "2009-12-28T12:01:09Z"
+    },
+    "hotchpotch/hatenausermulti-xul": {
+      "display_name": "hatenausermulti-xul",
+      "emoji": "👥",
+      "description": "Switch between multiple Hatena accounts in Firefox.",
+      "japan_focused": true,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/hatenausermulti-xul",
+      "stars": 5,
+      "pushed_at": "2009-03-03T12:51:43Z"
+    },
+    "hotchpotch/herdr-tiny-fingers": {
+      "display_name": "herdr-tiny-fingers",
+      "emoji": "👆",
+      "description": "Copy visible terminal text using keyboard hints.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/herdr-tiny-fingers",
+      "stars": 6,
+      "pushed_at": "2026-08-04T10:03:33Z"
+    },
+    "hotchpotch/hotchpotch": {
+      "display_name": "hotchpotch",
+      "emoji": "🪪",
+      "description": "Source files for this GitHub profile page.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/hotchpotch",
+      "stars": 0,
+      "pushed_at": "2026-08-14T08:12:06Z"
+    },
+    "hotchpotch/hotchpotch.github.com": {
+      "display_name": "hotchpotch.github.com",
+      "emoji": "🏠",
+      "description": "Legacy source for the personal GitHub Pages site.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/hotchpotch.github.com",
+      "stars": 2,
+      "pushed_at": "2010-02-10T02:38:03Z"
+    },
+    "hotchpotch/hparser": {
+      "display_name": "hparser",
+      "emoji": "📜",
+      "description": "Parse legacy Hatena markup syntax with Ruby.",
+      "japan_focused": true,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/hparser",
+      "stars": 22,
+      "pushed_at": "2016-02-05T16:04:46Z"
+    },
+    "hotchpotch/http-dump": {
+      "display_name": "http-dump",
+      "emoji": "🚰",
+      "description": "Inspect HTTP requests captured through Ruby `WebMock`.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/http-dump",
+      "stars": 69,
+      "pushed_at": "2015-08-28T02:35:45Z"
+    },
+    "hotchpotch/hue_ir_receiver": {
+      "display_name": "hue_ir_receiver",
+      "emoji": "💡",
+      "description": "Control Philips Hue lights from infrared signals.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/hue_ir_receiver",
+      "stars": 0,
+      "pushed_at": "2015-09-24T11:52:32Z"
+    },
+    "hotchpotch/hyatena-bot": {
+      "display_name": "hyatena-bot",
+      "emoji": "🤖",
+      "description": "Experimental automation bot for Japanese Hatena services.",
+      "japan_focused": true,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/hyatena-bot",
+      "stars": 0,
+      "pushed_at": "2014-09-30T05:11:05Z"
+    },
+    "hotchpotch/iphone-view-iframe": {
+      "display_name": "iphone-view-iframe",
+      "emoji": "📐",
+      "description": "Preview webpages inside an iPhone-sized iframe.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/iphone-view-iframe",
+      "stars": 2,
+      "pushed_at": "2009-08-11T06:22:17Z"
+    },
+    "hotchpotch/JaCWIR": {
+      "display_name": "JaCWIR",
+      "emoji": "🧭",
+      "description": "Casual Japanese web retrieval evaluation dataset.",
+      "japan_focused": true,
+      "category": "nlp-ai",
+      "profile_topics": [
+        "information-retrieval"
+      ],
+      "url": "https://github.com/hotchpotch/JaCWIR",
+      "stars": 8,
+      "pushed_at": "2025-09-09T07:44:04Z"
+    },
+    "hotchpotch/JQaRA": {
+      "display_name": "JQaRA",
+      "emoji": "❓",
+      "description": "Japanese question-answering benchmark for `RAG` evaluation.",
+      "japan_focused": true,
+      "category": "nlp-ai",
+      "profile_topics": [
+        "information-retrieval",
+        "nlp"
+      ],
+      "url": "https://github.com/hotchpotch/JQaRA",
+      "stars": 45,
+      "pushed_at": "2025-09-09T04:34:00Z"
+    },
+    "hotchpotch/jscolor": {
+      "display_name": "jscolor",
+      "emoji": "🎨",
+      "description": "Compact color manipulation helpers written in JavaScript.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/jscolor",
+      "stars": 5,
+      "pushed_at": "2008-12-25T11:03:29Z"
+    },
+    "hotchpotch/jsdeferred-webdatabase": {
+      "display_name": "jsdeferred-webdatabase",
+      "emoji": "🗃️",
+      "description": "WebDatabase mapper built around JSDeferred control flow.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/jsdeferred-webdatabase",
+      "stars": 15,
+      "pushed_at": "2010-05-19T03:44:28Z"
+    },
+    "hotchpotch/kawaii-generator": {
+      "display_name": "kawaii-generator",
+      "emoji": "🌸",
+      "description": "Generate playful Japanese kawaii graphics with ActionScript.",
+      "japan_focused": true,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/kawaii-generator",
+      "stars": 2,
+      "pushed_at": "2009-08-01T03:56:12Z"
+    },
+    "hotchpotch/mbed-autowriter": {
+      "display_name": "mbed-autowriter",
+      "emoji": "✍️",
+      "description": "Automate source updates for online `mbed` projects.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/mbed-autowriter",
+      "stars": 0,
+      "pushed_at": "2016-02-27T03:55:54Z"
+    },
+    "hotchpotch/mecab-ruby-gem": {
+      "display_name": "mecab-ruby-gem",
+      "emoji": "💎",
+      "description": "Package MeCab Japanese tokenization bindings for Ruby.",
+      "japan_focused": true,
+      "category": "nlp-ai",
+      "profile_topics": [
+        "nlp"
+      ],
+      "url": "https://github.com/hotchpotch/mecab-ruby-gem",
+      "stars": 12,
+      "pushed_at": "2012-04-29T10:50:44Z"
+    },
+    "hotchpotch/meta_framework-vim": {
+      "display_name": "meta_framework-vim",
+      "emoji": "🪄",
+      "description": "Experimental metaprogramming framework operated through Vim.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/meta_framework-vim",
+      "stars": 4,
+      "pushed_at": "2008-08-06T03:23:33Z"
+    },
+    "hotchpotch/moco": {
+      "display_name": "moco",
+      "emoji": "🧑‍🔧",
+      "description": "Command-line client for the online `mbed` compiler.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/moco",
+      "stars": 5,
+      "pushed_at": "2016-03-10T09:32:58Z"
+    },
+    "hotchpotch/ncd_classifier": {
+      "display_name": "ncd_classifier",
+      "emoji": "🗜️",
+      "description": "Classify text using compression distance without parameters.",
+      "japan_focused": false,
+      "category": "nlp-ai",
+      "profile_topics": [
+        "machine-learning",
+        "nlp"
+      ],
+      "url": "https://github.com/hotchpotch/ncd_classifier",
+      "stars": 3,
+      "pushed_at": "2023-07-20T20:38:18Z"
+    },
+    "hotchpotch/next-with-typesaurus-example": {
+      "display_name": "next-with-typesaurus-example",
+      "emoji": "🦕",
+      "description": "Example Next.js application using typed Firestore access.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/next-with-typesaurus-example",
+      "stars": 0,
+      "pushed_at": "2023-01-06T05:12:25Z"
+    },
+    "hotchpotch/olympus-camera": {
+      "display_name": "olympus-camera",
+      "emoji": "📷",
+      "description": "Ruby wrapper for the Olympus Camera API.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/olympus-camera",
+      "stars": 4,
+      "pushed_at": "2020-11-20T00:16:24Z"
+    },
+    "hotchpotch/olympus-camera-dl": {
+      "display_name": "olympus-camera-dl",
+      "emoji": "📥",
+      "description": "Download Olympus camera photos directly over Wi-Fi.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/olympus-camera-dl",
+      "stars": 0,
+      "pushed_at": "2020-11-24T00:07:36Z"
+    },
+    "hotchpotch/open_provence": {
+      "display_name": "open_provence",
+      "emoji": "🪚",
+      "description": "Efficient context pruning for retrieval-augmented generation.",
+      "japan_focused": false,
+      "category": "nlp-ai",
+      "profile_topics": [
+        "information-retrieval",
+        "machine-learning",
+        "nlp"
+      ],
+      "url": "https://github.com/hotchpotch/open_provence",
+      "stars": 65,
+      "pushed_at": "2025-11-22T01:30:13Z"
+    },
+    "hotchpotch/openai-api-server-via-codex": {
+      "display_name": "openai-api-server-via-codex",
+      "emoji": "🔌",
+      "description": "Serve an OpenAI-compatible API through `Codex`.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/openai-api-server-via-codex",
+      "stars": 32,
+      "pushed_at": "2026-08-13T09:53:18Z"
+    },
+    "hotchpotch/perl-acme-momoiroclover": {
+      "display_name": "perl-acme-momoiroclover",
+      "emoji": "🍀",
+      "description": "Playful Perl module inspired by Momoiro Clover.",
+      "japan_focused": true,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/perl-acme-momoiroclover",
+      "stars": 5,
+      "pushed_at": "2019-02-05T05:39:57Z"
+    },
+    "hotchpotch/perldoc-vim": {
+      "display_name": "perldoc-vim",
+      "emoji": "🐪",
+      "description": "Browse Perl documentation without leaving Vim.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/perldoc-vim",
+      "stars": 44,
+      "pushed_at": "2015-11-20T12:04:24Z"
+    },
+    "hotchpotch/pixoo-spotify": {
+      "display_name": "pixoo-spotify",
+      "emoji": "🖼️",
+      "description": "Display Spotify artwork on a Pixoo screen.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/pixoo-spotify",
+      "stars": 0,
+      "pushed_at": "2026-08-10T11:09:41Z"
+    },
+    "hotchpotch/pry-clipboard": {
+      "display_name": "pry-clipboard",
+      "emoji": "📋",
+      "description": "Copy Ruby `Pry` session results to clipboard.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/pry-clipboard",
+      "stars": 42,
+      "pushed_at": "2012-04-26T01:28:43Z"
+    },
+    "hotchpotch/rack-convert-webp": {
+      "display_name": "rack-convert-webp",
+      "emoji": "🖌️",
+      "description": "Convert served images into WebP through Rack.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/rack-convert-webp",
+      "stars": 2,
+      "pushed_at": "2014-03-20T14:56:42Z"
+    },
+    "hotchpotch/rapids-svr-svc-marc_ja": {
+      "display_name": "rapids-svr-svc-marc_ja",
+      "emoji": "🚀",
+      "description": "Train accelerated classifiers on Japanese MARC records.",
+      "japan_focused": true,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/rapids-svr-svc-marc_ja",
+      "stars": 0,
+      "pushed_at": "2022-12-13T00:27:50Z"
+    },
+    "hotchpotch/rascut": {
+      "display_name": "rascut",
+      "emoji": "✂️",
+      "description": "Ruby utilities for building ActionScript projects quickly.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/rascut",
+      "stars": 26,
+      "pushed_at": "2013-02-22T07:48:17Z"
+    },
+    "hotchpotch/react-navigation-mobx-example": {
+      "display_name": "react-navigation-mobx-example",
+      "emoji": "🗺️",
+      "description": "Demonstrate MobX integration with React Navigation.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/react-navigation-mobx-example",
+      "stars": 52,
+      "pushed_at": "2017-05-13T08:03:15Z"
+    },
+    "hotchpotch/readlists-anonymous": {
+      "display_name": "readlists-anonymous",
+      "emoji": "📚",
+      "description": "Access Readlists APIs without authenticated user sessions.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/readlists-anonymous",
+      "stars": 1,
+      "pushed_at": "2014-01-05T15:23:44Z"
+    },
+    "hotchpotch/rmagick-1.15.17-no-rdoc": {
+      "display_name": "rmagick-1.15.17-no-rdoc",
+      "emoji": "🧙",
+      "description": "Package legacy RMagick without generated documentation.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/rmagick-1.15.17-no-rdoc",
+      "stars": 2,
+      "pushed_at": "2011-04-13T09:09:59Z"
+    },
+    "hotchpotch/ruboty-aa": {
+      "display_name": "ruboty-aa",
+      "emoji": "💬",
+      "description": "Generate ASCII art through a Ruboty plugin.",
+      "japan_focused": true,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/ruboty-aa",
+      "stars": 3,
+      "pushed_at": "2014-09-03T07:35:58Z"
+    },
+    "hotchpotch/rubyistokei-ios-motion": {
+      "display_name": "rubyistokei-ios-motion",
+      "emoji": "⌚",
+      "description": "iOS Motion implementation of the Rubyist clock.",
+      "japan_focused": true,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/rubyistokei-ios-motion",
+      "stars": 4,
+      "pushed_at": "2013-12-23T08:00:40Z"
+    },
+    "hotchpotch/secon-dev-auto-title-vibe-cording": {
+      "display_name": "secon-dev-auto-title-vibe-cording",
+      "emoji": "🏷️",
+      "description": "Generate missing Japanese blog post titles automatically.",
+      "japan_focused": true,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/secon-dev-auto-title-vibe-cording",
+      "stars": 0,
+      "pushed_at": "2025-04-21T07:11:24Z"
+    },
+    "hotchpotch/secon-dev-n-year-summary": {
+      "display_name": "secon-dev-n-year-summary",
+      "emoji": "🗓️",
+      "description": "Summarize multiple years of Japanese blog archives.",
+      "japan_focused": true,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/secon-dev-n-year-summary",
+      "stars": 0,
+      "pushed_at": "2024-01-16T08:39:44Z"
+    },
+    "hotchpotch/shakyo-kozos": {
+      "display_name": "shakyo-kozos",
+      "emoji": "🛕",
+      "description": "Code transcription exercises using classic software structures.",
+      "japan_focused": true,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/shakyo-kozos",
+      "stars": 0,
+      "pushed_at": "2016-09-07T11:36:09Z"
+    },
+    "hotchpotch/similar-documents-cli": {
+      "display_name": "similar-documents-cli",
+      "emoji": "🪞",
+      "description": "Find semantically similar documents from the command line.",
+      "japan_focused": false,
+      "category": "nlp-ai",
+      "profile_topics": [
+        "information-retrieval"
+      ],
+      "url": "https://github.com/hotchpotch/similar-documents-cli",
+      "stars": 8,
+      "pushed_at": "2021-05-31T06:07:33Z"
+    },
+    "hotchpotch/sketch": {
+      "display_name": "sketch",
+      "emoji": "✏️",
+      "description": "Personal experimental sketches and small code fragments.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/sketch",
+      "stars": 1,
+      "pushed_at": "2009-07-22T09:37:49Z"
+    },
+    "hotchpotch/sql-abstract-javascript": {
+      "display_name": "sql-abstract-javascript",
+      "emoji": "🧮",
+      "description": "Generate SQL expressions from structured JavaScript objects.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/sql-abstract-javascript",
+      "stars": 11,
+      "pushed_at": "2010-02-25T11:58:28Z"
+    },
+    "hotchpotch/sqlite-vaporetto": {
+      "display_name": "sqlite-vaporetto",
+      "emoji": "🗄️",
+      "description": "Japanese full-text search for `SQLite FTS5`.",
+      "japan_focused": true,
+      "category": "nlp-ai",
+      "profile_topics": [
+        "information-retrieval",
+        "nlp"
+      ],
+      "url": "https://github.com/hotchpotch/sqlite-vaporetto",
+      "stars": 20,
+      "pushed_at": "2026-04-30T08:41:46Z"
+    },
+    "hotchpotch/tempdir": {
+      "display_name": "tempdir",
+      "emoji": "📁",
+      "description": "Create temporary directories with a Tempfile-like interface.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/tempdir",
+      "stars": 4,
+      "pushed_at": "2011-10-02T23:42:43Z"
+    },
+    "hotchpotch/test2": {
+      "display_name": "test2",
+      "emoji": "🧪",
+      "description": "Minimal sandbox for testing GitHub repository behavior.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/test2",
+      "stars": 1,
+      "pushed_at": null
+    },
+    "hotchpotch/test_hotchpotch": {
+      "display_name": "test_hotchpotch",
+      "emoji": "🔬",
+      "description": "Personal test repository for small GitHub experiments.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/test_hotchpotch",
+      "stars": 2,
+      "pushed_at": "2009-09-24T08:27:26Z"
+    },
+    "hotchpotch/ThisIsTest": {
+      "display_name": "ThisIsTest",
+      "emoji": "🧫",
+      "description": "Small repository for testing GitHub project workflows.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/ThisIsTest",
+      "stars": 0,
+      "pushed_at": "2013-03-04T10:52:30Z"
+    },
+    "hotchpotch/trn": {
+      "display_name": "trn",
+      "emoji": "🌍",
+      "description": "Fast translation CLI using Apple's native framework.",
+      "japan_focused": false,
+      "category": "nlp-ai",
+      "profile_topics": [
+        "nlp"
+      ],
+      "url": "https://github.com/hotchpotch/trn",
+      "stars": 8,
+      "pushed_at": "2026-08-06T01:16:31Z"
+    },
+    "hotchpotch/uffy": {
+      "display_name": "uffy",
+      "emoji": "🌉",
+      "description": "Bridge ActionScript and JavaScript application code.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/uffy",
+      "stars": 8,
+      "pushed_at": "2008-07-18T13:39:28Z"
+    },
+    "hotchpotch/vim-rails": {
+      "display_name": "vim-rails",
+      "emoji": "🛤️",
+      "description": "Legacy Rails development helpers for the Vim editor.",
+      "japan_focused": false,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/vim-rails",
+      "stars": 4,
+      "pushed_at": "2008-07-16T02:09:12Z"
+    },
+    "hotchpotch/WebdbReactNativeExample": {
+      "display_name": "WebdbReactNativeExample",
+      "emoji": "📱",
+      "description": "React Native examples for WEB+DB PRESS readers.",
+      "japan_focused": true,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/WebdbReactNativeExample",
+      "stars": 1,
+      "pushed_at": "2017-11-29T00:27:13Z"
+    },
+    "hotchpotch/wikipedia-passages-jawiki-embeddings-utils": {
+      "display_name": "wikipedia-passages-jawiki-embeddings-utils",
+      "emoji": "🧠",
+      "description": "Build Japanese Wikipedia embeddings and `FAISS` indexes.",
+      "japan_focused": true,
+      "category": "nlp-ai",
+      "profile_topics": [
+        "information-retrieval"
+      ],
+      "url": "https://github.com/hotchpotch/wikipedia-passages-jawiki-embeddings-utils",
+      "stars": 12,
+      "pushed_at": "2024-03-28T23:18:54Z"
+    },
+    "hotchpotch/YA-BiseiTokei-android": {
+      "display_name": "YA-BiseiTokei-android",
+      "emoji": "⏰",
+      "description": "Android companion app for a Japanese voice clock.",
+      "japan_focused": true,
+      "category": "tools",
+      "profile_topics": [
+        "tools"
+      ],
+      "url": "https://github.com/hotchpotch/YA-BiseiTokei-android",
+      "stars": 2,
+      "pushed_at": "2010-02-12T15:54:52Z"
+    },
+    "hotchpotch/yasem": {
+      "display_name": "yasem",
+      "emoji": "🌱",
+      "description": "Simple efficient library for sparse `SPLADE` embeddings.",
+      "japan_focused": false,
+      "category": "nlp-ai",
+      "profile_topics": [
+        "information-retrieval"
+      ],
+      "url": "https://github.com/hotchpotch/yasem",
+      "stars": 13,
+      "pushed_at": "2025-05-22T00:22:29Z"
+    },
+    "hotchpotch/yast": {
+      "display_name": "yast",
+      "emoji": "🎯",
+      "description": "Train sparse retrieval models with `SPLADE`.",
+      "japan_focused": false,
+      "category": "nlp-ai",
+      "profile_topics": [
+        "information-retrieval",
+        "machine-learning"
+      ],
+      "url": "https://github.com/hotchpotch/yast",
+      "stars": 21,
+      "pushed_at": "2025-06-16T23:47:31Z"
+    },
+    "hotchpotch/youri-7b-sft-qa-context-jaqket": {
+      "display_name": "youri-7b-sft-qa-context-jaqket",
+      "emoji": "🧑‍🏫",
+      "description": "Fine-tune Japanese QA models with retrieval context.",
+      "japan_focused": true,
+      "category": "nlp-ai",
+      "profile_topics": [
+        "information-retrieval",
+        "nlp"
+      ],
+      "url": "https://github.com/hotchpotch/youri-7b-sft-qa-context-jaqket",
+      "stars": 2,
+      "pushed_at": "2024-02-24T22:49:07Z"
+    }
+  }
+}

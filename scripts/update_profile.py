@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
-"""Update the repository sections in the hotchpotch GitHub profile README.
-
-Repository metadata is always collected through the GitHub CLI. Private
-repositories are rejected both at collection time and before any output or
-GitHub mutation.
-"""
+"""Synchronize curated public repository metadata and the profile README."""
 
 from __future__ import annotations
 
@@ -20,44 +15,19 @@ from typing import Any, Iterable, Sequence
 
 
 OWNER = "hotchpotch"
-EXTERNAL_REPOSITORIES: dict[str, set[str]] = {
-    "hakari-bench/hakari-bench": {"nlp"},
-}
+DEFAULT_CONFIG = Path("repos.json")
 START_MARKER = "<!-- profile-repositories:start -->"
 END_MARKER = "<!-- profile-repositories:end -->"
-
-# Explicit decisions override keyword classification.
-TOPIC_OVERRIDES: dict[str, set[str]] = {
-    "Aground-ja_JP-translation": {"tools"},
-    "baidu-translate-api-ruby": {"tools"},
-    "openai-api-server-via-codex": {"tools"},
+PROFILE_TOPICS = {
+    "nlp",
+    "information-retrieval",
+    "machine-learning",
+    "data-science",
+    "artificial-intelligence",
+    "tools",
 }
-
-IR_PATTERN = re.compile(
-    r"retriev|search|rag|splade|rerank|embedding|ir[ -]eval|ir[ -]dataset|"
-    r"jaqket|jqara|jacwir|unir|\bfts\b|similar[ -]documents|"
-    r"wikipedia.*(?:passage|pair)|全文検索",
-    re.IGNORECASE,
-)
-NLP_PATTERN = re.compile(
-    r"\bnlp\b|natural[ -]language|language[ -]model|sentence|text|translat|"
-    r"mecab|vaporetto|bunkai|hiragana|question[ -]answer",
-    re.IGNORECASE,
-)
-ML_PATTERN = re.compile(
-    r"machine[ -]learning|\bml\b|classifier|classification|cross[ -]encoder|"
-    r"word2vec|fineweb|trainer|pruning",
-    re.IGNORECASE,
-)
-DS_PATTERN = re.compile(
-    r"data[ -]science|dataset|kaggle|notebook|analytics|prediction|predictor",
-    re.IGNORECASE,
-)
-AI_PATTERN = re.compile(
-    r"artificial[ -]intelligence|\bai\b|\bllm\b|openai|codex|agent|gpt|"
-    r"neural|deep[ -]learning",
-    re.IGNORECASE,
-)
+TOPICAL_TOPICS = PROFILE_TOPICS - {"tools"}
+WORD_PATTERN = re.compile(r"[A-Za-z0-9][A-Za-z0-9+.#/'-]*")
 
 
 @dataclass(frozen=True)
@@ -65,7 +35,6 @@ class Repository:
     name: str
     name_with_owner: str
     url: str
-    description: str
     stars: int
     pushed_at: str
     is_private: bool
@@ -77,7 +46,6 @@ class Repository:
             name=value["name"],
             name_with_owner=value["nameWithOwner"],
             url=value["url"],
-            description=(value.get("description") or "").strip(),
             stars=int(value["stargazerCount"]),
             pushed_at=value.get("pushedAt") or "",
             is_private=bool(value["isPrivate"]),
@@ -85,10 +53,6 @@ class Repository:
                 topic["name"] for topic in value.get("repositoryTopics") or []
             ),
         )
-
-    @property
-    def search_text(self) -> str:
-        return " ".join((self.name, self.description, *sorted(self.topics)))
 
 
 def run_gh(args: Sequence[str]) -> str:
@@ -100,20 +64,77 @@ def run_gh(args: Sequence[str]) -> str:
     return result.stdout
 
 
-def collect_public_repositories(owner: str) -> list[Repository]:
-    fields = ",".join(
+def api_fields() -> str:
+    return ",".join(
         (
             "name",
             "nameWithOwner",
             "url",
-            "description",
             "isPrivate",
             "stargazerCount",
             "pushedAt",
             "repositoryTopics",
         )
     )
-    raw = run_gh(
+
+
+def load_config(path: Path) -> dict[str, Any]:
+    value = json.loads(path.read_text(encoding="utf-8"))
+    if value.get("schema_version") != 1:
+        raise RuntimeError("repos.json must use schema_version 1")
+    repositories = value.get("repositories")
+    if not isinstance(repositories, dict) or not repositories:
+        raise RuntimeError("repos.json must contain a non-empty repositories object")
+    validate_curated_metadata(repositories)
+    return value
+
+
+def validate_curated_metadata(repositories: dict[str, Any]) -> None:
+    required = {
+        "display_name",
+        "emoji",
+        "description",
+        "japan_focused",
+        "category",
+        "profile_topics",
+        "url",
+        "stars",
+        "pushed_at",
+    }
+    seen_emojis: dict[str, str] = {}
+    for full_name, metadata in repositories.items():
+        missing = required - set(metadata)
+        if missing:
+            raise RuntimeError(
+                f"repos.json entry {full_name} is missing: {', '.join(sorted(missing))}"
+            )
+        description = metadata["description"]
+        words = WORD_PATTERN.findall(description)
+        if not 5 <= len(words) <= 10:
+            raise RuntimeError(
+                f"repos.json entry {full_name} must have a 5-10 word description; "
+                f"found {len(words)}"
+            )
+        if description.count("`") % 2:
+            raise RuntimeError(f"repos.json entry {full_name} has unbalanced backticks")
+        emoji = metadata["emoji"]
+        if emoji in seen_emojis:
+            raise RuntimeError(
+                f"repos.json duplicates emoji {emoji} for {seen_emojis[emoji]} and "
+                f"{full_name}"
+            )
+        seen_emojis[emoji] = full_name
+        if metadata["category"] not in {"nlp-ai", "tools"}:
+            raise RuntimeError(f"repos.json entry {full_name} has an invalid category")
+        topics = set(metadata["profile_topics"])
+        if not topics or not topics <= PROFILE_TOPICS:
+            raise RuntimeError(f"repos.json entry {full_name} has invalid profile topics")
+
+
+def collect_repositories(
+    owner: str, configured_names: Iterable[str]
+) -> list[Repository]:
+    owned_raw = run_gh(
         (
             "repo",
             "list",
@@ -124,77 +145,89 @@ def collect_public_repositories(owner: str) -> list[Repository]:
             "--visibility",
             "public",
             "--json",
-            fields,
+            api_fields(),
         )
     )
-    repositories = [Repository.from_api(item) for item in json.loads(raw)]
-    private = [repo for repo in repositories if repo.is_private]
-    if private:
-        # Do not print private repository names; only report the rejected count.
+    repositories = [Repository.from_api(item) for item in json.loads(owned_raw)]
+    external_names = sorted(
+        full_name
+        for full_name in configured_names
+        if full_name.split("/", 1)[0] != owner
+    )
+    for full_name in external_names:
+        raw = run_gh(("repo", "view", full_name, "--json", api_fields()))
+        repositories.append(Repository.from_api(json.loads(raw)))
+
+    private_count = sum(repo.is_private for repo in repositories)
+    if private_count:
         raise RuntimeError(
-            f"Safety check failed: GitHub returned {len(private)} private repositories"
+            f"Safety check failed: GitHub returned {private_count} private repositories"
         )
     return repositories
 
 
-def collect_external_public_repositories() -> list[Repository]:
-    fields = ",".join(
-        (
-            "name",
-            "nameWithOwner",
-            "url",
-            "description",
-            "isPrivate",
-            "stargazerCount",
-            "pushedAt",
-            "repositoryTopics",
+def validate_inventory(
+    repositories: list[Repository], configured: dict[str, Any]
+) -> None:
+    fetched_names = {repo.name_with_owner for repo in repositories}
+    configured_names = set(configured)
+    missing_config = fetched_names - configured_names
+    unavailable = configured_names - fetched_names
+    if missing_config:
+        raise RuntimeError(
+            "Public repositories missing curated repos.json entries: "
+            + ", ".join(sorted(missing_config))
         )
+    if unavailable:
+        raise RuntimeError(
+            "Configured repositories were not returned as public: "
+            + ", ".join(sorted(unavailable))
+        )
+
+
+def sync_dynamic_metadata(
+    config: dict[str, Any], repositories: list[Repository]
+) -> bool:
+    changed = False
+    configured = config["repositories"]
+    for repo in repositories:
+        metadata = configured[repo.name_with_owner]
+        values = {
+            "url": repo.url,
+            "stars": repo.stars,
+            "pushed_at": repo.pushed_at or None,
+        }
+        for key, value in values.items():
+            if metadata.get(key) != value:
+                metadata[key] = value
+                changed = True
+    return changed
+
+
+def write_config(path: Path, config: dict[str, Any]) -> None:
+    path.write_text(
+        json.dumps(config, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
-    repositories = []
-    for name_with_owner in EXTERNAL_REPOSITORIES:
-        raw = run_gh(("repo", "view", name_with_owner, "--json", fields))
-        repo = Repository.from_api(json.loads(raw))
-        if repo.is_private:
-            raise RuntimeError(
-                "Safety check failed: GitHub returned 1 private external repository"
-            )
-        repositories.append(repo)
-    return repositories
 
 
-def inferred_topics(repo: Repository) -> set[str]:
-    external_override = EXTERNAL_REPOSITORIES.get(repo.name_with_owner)
-    if external_override is not None:
-        return set(external_override)
-    override = TOPIC_OVERRIDES.get(repo.name)
-    if override is not None:
-        return set(override)
-
-    text = repo.search_text
-    topics: set[str] = set()
-    if IR_PATTERN.search(text):
-        topics.add("information-retrieval")
-    if NLP_PATTERN.search(text):
-        topics.add("nlp")
-    if ML_PATTERN.search(text):
-        topics.add("machine-learning")
-    if DS_PATTERN.search(text):
-        topics.add("data-science")
-    if AI_PATTERN.search(text):
-        topics.add("artificial-intelligence")
-    return topics or {"tools"}
+def sort_items(items: Iterable[tuple[str, dict[str, Any]]]):
+    return sorted(
+        items,
+        key=lambda item: (-int(item[1]["stars"]), item[1]["display_name"].casefold()),
+    )
 
 
-def sort_repositories(repositories: Iterable[Repository]) -> list[Repository]:
-    return sorted(repositories, key=lambda repo: (-repo.stars, repo.name.casefold()))
+def markdown_line(metadata: dict[str, Any]) -> str:
+    stars = f" ({metadata['stars']} stars)" if metadata["stars"] > 10 else ""
+    japan = "🇯🇵 " if metadata["japan_focused"] else ""
+    return (
+        f"- {metadata['emoji']} **[{metadata['display_name']}]({metadata['url']})**"
+        f"{stars} - {japan}{metadata['description']}"
+    )
 
 
-def markdown_list(repositories: Iterable[Repository]) -> str:
-    lines = []
-    for repo in sort_repositories(repositories):
-        suffix = f" / {repo.description}" if repo.description else ""
-        lines.append(f"- [{repo.name}]({repo.url}) ⭐ {repo.stars}{suffix}")
-    return "\n".join(lines)
+def markdown_list(items: Iterable[tuple[str, dict[str, Any]]]) -> str:
+    return "\n".join(markdown_line(metadata) for _, metadata in sort_items(items))
 
 
 def five_year_cutoff(today: dt.date) -> dt.date:
@@ -204,28 +237,17 @@ def five_year_cutoff(today: dt.date) -> dt.date:
         return today.replace(year=today.year - 5, day=28)
 
 
-def render_repository_block(repositories: list[Repository], today: dt.date) -> str:
+def render_repository_block(configured: dict[str, Any], today: dt.date) -> str:
     cutoff = five_year_cutoff(today).isoformat()
-    categorized = [(repo, inferred_topics(repo)) for repo in repositories]
-
-    topical = [
-        repo
-        for repo, topics in categorized
-        if topics.intersection(
-            {
-                "nlp",
-                "information-retrieval",
-                "machine-learning",
-                "data-science",
-                "artificial-intelligence",
-            }
-        )
+    items = list(configured.items())
+    topical = [item for item in items if item[1]["category"] == "nlp-ai"]
+    tools = [item for item in items if item[1]["category"] == "tools"]
+    active_tools = [
+        item for item in tools if (item[1].get("pushed_at") or "")[:10] >= cutoff
     ]
-    topical_names = {repo.name for repo in topical}
-    other = [repo for repo in repositories if repo.name not in topical_names]
-    active = [repo for repo in other if repo.pushed_at[:10] >= cutoff]
-    older = [repo for repo in other if repo.pushed_at[:10] < cutoff]
-
+    older = [
+        item for item in tools if (item[1].get("pushed_at") or "")[:10] < cutoff
+    ]
     return "\n".join(
         (
             START_MARKER,
@@ -237,7 +259,7 @@ def render_repository_block(repositories: list[Repository], today: dt.date) -> s
             "",
             "## Tools & Other Projects",
             "",
-            markdown_list(active),
+            markdown_list(active_tools),
             "",
             "<details>",
             "<summary><strong>Older projects</strong> — not updated in the last five years</summary>",
@@ -250,28 +272,54 @@ def render_repository_block(repositories: list[Repository], today: dt.date) -> s
     )
 
 
+def render_intro() -> str:
+    return "\n".join(
+        (
+            "# Hello! 👋",
+            "",
+            "Hi, I am Yuichi Tateno, a Japanese software engineer. Online, I use "
+            "the handle `@hotchpotch` or `id:secondlife`.",
+            "",
+            "My profile icon is a robot head drooling into a puddle.",
+            "",
+            "I am currently interested in IR (information retrieval), and I work "
+            "on IR-related research and development.",
+            "",
+            "My sites: [hotchpotch.dev(en)](https://hotchpotch.dev/) | "
+            "[secon.dev(ja)](https://secon.dev/)",
+            "",
+            '<img height="80" src="https://storage.googleapis.com/'
+            'secons-site-images/other/blog_images/secon_icon_nendo.webp" '
+            'alt="Robot head drooling into a puddle" />',
+        )
+    )
+
+
 def update_readme(path: Path, block: str) -> None:
-    current = path.read_text(encoding="utf-8").rstrip()
+    current = path.read_text(encoding="utf-8")
     if START_MARKER in current or END_MARKER in current:
         if current.count(START_MARKER) != 1 or current.count(END_MARKER) != 1:
             raise RuntimeError("README has incomplete or duplicate profile markers")
-        start = current.index(START_MARKER)
-        end = current.index(END_MARKER, start) + len(END_MARKER)
-        updated = f"{current[:start].rstrip()}\n\n{block}\n{current[end:].lstrip()}"
+        end = current.index(END_MARKER) + len(END_MARKER)
+        suffix = current[end:].strip()
+        updated = f"{render_intro()}\n\n{block}"
+        if suffix:
+            updated += f"\n\n{suffix}"
+        updated += "\n"
     else:
-        updated = f"{current}\n\n{block}\n"
+        updated = f"{render_intro()}\n\n{block}\n"
     path.write_text(updated, encoding="utf-8")
 
 
-def add_missing_topics(repositories: list[Repository], apply: bool) -> int:
+def add_missing_topics(repositories: list[Repository], configured: dict[str, Any], apply: bool) -> int:
     changes = 0
-    for repo in sort_repositories(repositories):
-        desired = inferred_topics(repo)
+    for repo in sorted(repositories, key=lambda item: item.name_with_owner.casefold()):
+        desired = set(configured[repo.name_with_owner]["profile_topics"])
         missing = sorted(desired - repo.topics)
         if not missing:
             continue
         changes += 1
-        print(f"{repo.name}: add {', '.join(missing)}")
+        print(f"{repo.name_with_owner}: add {', '.join(missing)}")
         if apply:
             args = ["repo", "edit", repo.name_with_owner]
             for topic in missing:
@@ -283,38 +331,36 @@ def add_missing_topics(repositories: list[Repository], apply: bool) -> int:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--owner", default=OWNER)
+    parser.add_argument("--config", type=Path, default=DEFAULT_CONFIG)
     parser.add_argument("--readme", type=Path, default=Path("README.md"))
     parser.add_argument("--date", type=dt.date.fromisoformat, default=dt.date.today())
-    parser.add_argument(
-        "--apply-topics",
-        action="store_true",
-        help="add inferred profile topics through gh repo edit",
-    )
-    parser.add_argument(
-        "--write", action="store_true", help="update the managed README block"
-    )
+    parser.add_argument("--apply-topics", action="store_true")
+    parser.add_argument("--write", action="store_true")
     return parser.parse_args()
 
 
 def main() -> int:
     args = parse_args()
     try:
-        repositories = collect_public_repositories(args.owner)
-        repositories.extend(collect_external_public_repositories())
-        if not repositories:
-            raise RuntimeError("No public source repositories returned by GitHub")
-
+        config = load_config(args.config)
+        configured = config["repositories"]
+        repositories = collect_repositories(args.owner, configured)
+        validate_inventory(repositories, configured)
         print(f"Verified {len(repositories)} public repositories; private: 0")
-        changes = add_missing_topics(repositories, args.apply_topics)
+        changes = add_missing_topics(repositories, configured, args.apply_topics)
         action = "Applied" if args.apply_topics else "Planned"
         print(f"{action} topic updates for {changes} repositories")
-
-        block = render_repository_block(repositories, args.date)
+        metadata_changed = sync_dynamic_metadata(config, repositories)
         if args.write:
-            update_readme(args.readme, block)
-            print(f"Updated {args.readme}")
+            if metadata_changed:
+                write_config(args.config, config)
+            update_readme(
+                args.readme, render_repository_block(configured, args.date)
+            )
+            print(f"Updated {args.config} and {args.readme}")
         else:
-            print("README unchanged; pass --write to update it")
+            message = "Metadata updates available" if metadata_changed else "Metadata current"
+            print(f"{message}; pass --write to update files")
     except (OSError, RuntimeError, ValueError, json.JSONDecodeError) as error:
         print(f"error: {error}", file=sys.stderr)
         return 1
