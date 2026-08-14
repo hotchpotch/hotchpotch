@@ -25,6 +25,11 @@ content, documentation examples, or `README.md`.
 - When reporting a privacy validation failure, report only the rejected count,
   not repository names or metadata.
 
+An externally owned repository may be included only when the user explicitly
+identifies it as a project they maintain. Add it to the
+`EXTERNAL_REPOSITORIES` allowlist, fetch it separately with `gh repo view`, and
+apply the same `isPrivate == false` validation before accepting or printing it.
+
 ## Profile classification
 
 Use these GitHub topics for profile classification:

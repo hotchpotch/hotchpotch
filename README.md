@@ -16,6 +16,7 @@ Yuichi Tateno, id:secondlife, @hotchpotch
 - [open_provence](https://github.com/hotchpotch/open_provence) ⭐ 65 / ✂️ OpenProvence: Open-Source, Efficient, and Robust Context Pruning for Retrieval-Augmented Generation
 - [JQaRA](https://github.com/hotchpotch/JQaRA) ⭐ 45 / JQaRA: Japanese Question Answering with Retrieval Augmentation - 検索拡張(RAG)評価のための日本語Q&Aデータセット
 - [beko-translate](https://github.com/hotchpotch/beko-translate) ⭐ 36 / beko-translateは、Apple Silicon Mac向けのCLI翻訳ツールです。PDF見開き翻訳機能も同梱してあり原文・訳文を交互に表示できます。
+- [hakari-bench](https://github.com/hakari-bench/hakari-bench) ⭐ 30 / ⚖️ HAKARI-Bench is a lightweight IR benchmark that rebuilds retrieval tasks as small Nano-sets, making model selection, regression checks, quantization, truncation, and reranking comparisons practical under the same conditions.
 - [yast](https://github.com/hotchpotch/yast) ⭐ 21 / YAST - Yet Another SPLADE or Sparse Trainer
 - [sqlite-vaporetto](https://github.com/hotchpotch/sqlite-vaporetto) ⭐ 20 / SQLite FTS5 extension for fast Japanese full-text search with 🛥Vaporetto / Vaporetto による高速な日本語全文検索を SQLite FTS5 で実現する拡張機能
 - [yasem](https://github.com/hotchpotch/yasem) ⭐ 13 / YASEM - Yet Another Splade|Sparse Embedder - A simple and efficient library for SPLADE embeddings

@@ -20,6 +20,9 @@ from typing import Any, Iterable, Sequence
 
 
 OWNER = "hotchpotch"
+EXTERNAL_REPOSITORIES: dict[str, set[str]] = {
+    "hakari-bench/hakari-bench": {"nlp"},
+}
 START_MARKER = "<!-- profile-repositories:start -->"
 END_MARKER = "<!-- profile-repositories:end -->"
 
@@ -60,6 +63,7 @@ AI_PATTERN = re.compile(
 @dataclass(frozen=True)
 class Repository:
     name: str
+    name_with_owner: str
     url: str
     description: str
     stars: int
@@ -71,6 +75,7 @@ class Repository:
     def from_api(cls, value: dict[str, Any]) -> "Repository":
         return cls(
             name=value["name"],
+            name_with_owner=value["nameWithOwner"],
             url=value["url"],
             description=(value.get("description") or "").strip(),
             stars=int(value["stargazerCount"]),
@@ -99,6 +104,7 @@ def collect_public_repositories(owner: str) -> list[Repository]:
     fields = ",".join(
         (
             "name",
+            "nameWithOwner",
             "url",
             "description",
             "isPrivate",
@@ -131,7 +137,35 @@ def collect_public_repositories(owner: str) -> list[Repository]:
     return repositories
 
 
+def collect_external_public_repositories() -> list[Repository]:
+    fields = ",".join(
+        (
+            "name",
+            "nameWithOwner",
+            "url",
+            "description",
+            "isPrivate",
+            "stargazerCount",
+            "pushedAt",
+            "repositoryTopics",
+        )
+    )
+    repositories = []
+    for name_with_owner in EXTERNAL_REPOSITORIES:
+        raw = run_gh(("repo", "view", name_with_owner, "--json", fields))
+        repo = Repository.from_api(json.loads(raw))
+        if repo.is_private:
+            raise RuntimeError(
+                "Safety check failed: GitHub returned 1 private external repository"
+            )
+        repositories.append(repo)
+    return repositories
+
+
 def inferred_topics(repo: Repository) -> set[str]:
+    external_override = EXTERNAL_REPOSITORIES.get(repo.name_with_owner)
+    if external_override is not None:
+        return set(external_override)
     override = TOPIC_OVERRIDES.get(repo.name)
     if override is not None:
         return set(override)
@@ -229,9 +263,7 @@ def update_readme(path: Path, block: str) -> None:
     path.write_text(updated, encoding="utf-8")
 
 
-def add_missing_topics(
-    owner: str, repositories: list[Repository], apply: bool
-) -> int:
+def add_missing_topics(repositories: list[Repository], apply: bool) -> int:
     changes = 0
     for repo in sort_repositories(repositories):
         desired = inferred_topics(repo)
@@ -241,7 +273,7 @@ def add_missing_topics(
         changes += 1
         print(f"{repo.name}: add {', '.join(missing)}")
         if apply:
-            args = ["repo", "edit", f"{owner}/{repo.name}"]
+            args = ["repo", "edit", repo.name_with_owner]
             for topic in missing:
                 args.extend(("--add-topic", topic))
             run_gh(args)
@@ -268,11 +300,12 @@ def main() -> int:
     args = parse_args()
     try:
         repositories = collect_public_repositories(args.owner)
+        repositories.extend(collect_external_public_repositories())
         if not repositories:
             raise RuntimeError("No public source repositories returned by GitHub")
 
         print(f"Verified {len(repositories)} public repositories; private: 0")
-        changes = add_missing_topics(args.owner, repositories, args.apply_topics)
+        changes = add_missing_topics(repositories, args.apply_topics)
         action = "Applied" if args.apply_topics else "Planned"
         print(f"{action} topic updates for {changes} repositories")
 

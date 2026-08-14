@@ -45,6 +45,12 @@ Existing GitHub topics are preserved. The updater only adds missing profile
 topics. Explicit decisions live in `TOPIC_OVERRIDES` in
 `scripts/update_profile.py`; these overrides take priority over keyword rules.
 
+Public repositories maintained outside the `hotchpotch` account must be added
+explicitly to the `EXTERNAL_REPOSITORIES` allowlist. Each allowlisted repository
+is fetched separately with `gh repo view` and must pass the same
+`isPrivate == false` check before it is accepted. The current external NLP
+project is `hakari-bench/hakari-bench`.
+
 Whenever a new public project is created, consider which of the profile topics
 best describe it and add the appropriate topics. Do this before the next
 profile update when practical; otherwise, carefully review the updater's
