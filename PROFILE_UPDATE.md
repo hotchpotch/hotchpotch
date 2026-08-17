@@ -139,14 +139,14 @@ For a reproducible preview with a specific date:
 python3 scripts/update_profile.py --date 2026-08-14
 ```
 
-## Suggested schedule
+## Weekly schedule
 
-Run the preview and README update monthly. A scheduled GitHub Actions workflow
-should use the same script, grant only the repository permissions needed to
-read public metadata and edit this profile repository, and retain the strict
-public-only checks. Topic updates should remain an explicit maintenance step
-unless the workflow has been carefully reviewed for cross-repository write
-permissions.
+`scripts/weekly_update.py` runs the preview and README update once a week from
+the local crontab. It stops instead of committing when the worktree is dirty,
+the public-only confirmation is absent, the inventory needs curation, or a
+topic change needs review. Topic updates remain an explicit maintenance step.
+When the generated files change, the runner stages only `repos.json` and
+`README.md`, displays their staged diff, commits, and pushes the current branch.
 
 For every periodic update, follow this process:
 
