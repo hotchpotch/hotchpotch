@@ -490,7 +490,7 @@
       ],
       "url": "https://github.com/hotchpotch/hotchpotch",
       "stars": 0,
-      "pushed_at": "2026-08-14T23:16:27Z",
+      "pushed_at": "2026-08-14T23:21:48Z",
       "hidden": true
     },
     "hotchpotch/hotchpotch.github.com": {
@@ -587,7 +587,7 @@
         "information-retrieval"
       ],
       "url": "https://github.com/hotchpotch/JaCWIR",
-      "stars": 8,
+      "stars": 9,
       "pushed_at": "2025-09-09T07:44:04Z",
       "hidden": false
     },
@@ -787,7 +787,7 @@
         "tools"
       ],
       "url": "https://github.com/hotchpotch/openai-api-server-via-codex",
-      "stars": 32,
+      "stars": 33,
       "pushed_at": "2026-08-13T09:53:18Z",
       "hidden": false
     },

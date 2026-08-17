@@ -31,7 +31,7 @@
 
 ## Tools & Other Projects
 
-- 🔌 **[openai-api-server-via-codex](https://github.com/hotchpotch/openai-api-server-via-codex)** (32 stars) - Serve an OpenAI-compatible API through `Codex`.
+- 🔌 **[openai-api-server-via-codex](https://github.com/hotchpotch/openai-api-server-via-codex)** (33 stars) - Serve an OpenAI-compatible API through `Codex`.
 - 🏗️ **[hatena-group-static-generator](https://github.com/hotchpotch/hatena-group-static-generator)** - 🇯🇵 Export Hatena Group content as static pages.
 - 👆 **[herdr-tiny-fingers](https://github.com/hotchpotch/herdr-tiny-fingers)** - Copy visible terminal text using keyboard hints.
 - 🦕 **[next-with-typesaurus-example](https://github.com/hotchpotch/next-with-typesaurus-example)** - Example Next.js application using typed Firestore access.
