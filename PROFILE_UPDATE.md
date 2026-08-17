@@ -141,12 +141,12 @@ python3 scripts/update_profile.py --date 2026-08-14
 
 ## Weekly schedule
 
-`scripts/weekly_update.py` runs the preview and README update once a week from
-the local crontab. It stops instead of committing when the worktree is dirty,
-the public-only confirmation is absent, the inventory needs curation, or a
-topic change needs review. Topic updates remain an explicit maintenance step.
-When the generated files change, the runner stages only `repos.json` and
-`README.md`, displays their staged diff, commits, and pushes the current branch.
+`scripts/weekly_update.py` invokes Codex once a week from the local crontab.
+Codex reads this guide and `AGENTS.md`, curates newly discovered public source
+repositories, reviews proposed classifications and the generated diff, runs the
+required checks, and commits and pushes an accepted update. The runner refuses
+to start from a dirty worktree and writes its JSONL run log outside the
+repository under `~/.local/state/hotchpotch-profile-update/`.
 
 For every periodic update, follow this process:
 
