@@ -139,9 +139,9 @@ For a reproducible preview with a specific date:
 python3 scripts/update_profile.py --date 2026-08-14
 ```
 
-## Weekly schedule
+## Monthly schedule
 
-`scripts/weekly_update.py` invokes Codex once a week from the local crontab.
+`scripts/monthly_update.py` invokes Codex once a month from the local crontab.
 Codex reads this guide and `AGENTS.md`, curates newly discovered public source
 repositories, reviews proposed classifications and the generated diff, runs the
 required checks, and commits and pushes an accepted update. The runner refuses

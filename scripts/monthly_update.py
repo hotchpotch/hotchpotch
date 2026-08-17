@@ -14,7 +14,7 @@ from zoneinfo import ZoneInfo
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 MODEL = "gpt-5.6-sol"
-REASONING_EFFORT = "high"
+REASONING_EFFORT = "low"
 TIMEOUT_SECONDS = 1800
 JST = ZoneInfo("Asia/Tokyo")
 CODEX_CANDIDATES = (
