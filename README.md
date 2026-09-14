@@ -12,30 +12,30 @@
 <!-- profile-repositories:start -->
 ## NLP, IR, ML, DS & AI
 
-- ⚡ **[fast-bunkai](https://github.com/hotchpotch/fast-bunkai)** (75 stars) - 🇯🇵 Fast Japanese sentence splitting powered by `Rust`.
-- 🪚 **[open_provence](https://github.com/hotchpotch/open_provence)** (65 stars) - Efficient context pruning for retrieval-augmented generation.
+- ⚡ **[fast-bunkai](https://github.com/hotchpotch/fast-bunkai)** (77 stars) - 🇯🇵 Fast Japanese sentence splitting powered by `Rust`.
+- 🪚 **[open_provence](https://github.com/hotchpotch/open_provence)** (67 stars) - Efficient context pruning for retrieval-augmented generation.
 - ❓ **[JQaRA](https://github.com/hotchpotch/JQaRA)** (45 stars) - 🇯🇵 Japanese question-answering benchmark for `RAG` evaluation.
-- 📖 **[beko-translate](https://github.com/hotchpotch/beko-translate)** (36 stars) - 🇯🇵 Native Mac translation for text and PDFs.
-- ⚖️ **[HAKARI-Bench](https://github.com/hakari-bench/hakari-bench)** (30 stars) - Lightweight nano-scale benchmark for retrieval model decisions.
+- 📖 **[beko-translate](https://github.com/hotchpotch/beko-translate)** (37 stars) - 🇯🇵 Native Mac translation for text and PDFs.
+- ⚖️ **[HAKARI-Bench](https://github.com/hakari-bench/hakari-bench)** (31 stars) - Lightweight nano-scale benchmark for retrieval model decisions.
 - 🎯 **[yast](https://github.com/hotchpotch/yast)** (21 stars) - Train sparse retrieval models with `SPLADE`.
 - 🗄️ **[sqlite-vaporetto](https://github.com/hotchpotch/sqlite-vaporetto)** (20 stars) - 🇯🇵 Japanese full-text search for `SQLite FTS5`.
 - 🌱 **[yasem](https://github.com/hotchpotch/yasem)** (13 stars) - Simple efficient library for sparse `SPLADE` embeddings.
 - 🧠 **[wikipedia-passages-jawiki-embeddings-utils](https://github.com/hotchpotch/wikipedia-passages-jawiki-embeddings-utils)** (12 stars) - 🇯🇵 Build Japanese Wikipedia embeddings and `FAISS` indexes.
 - 🦆 **[duckdb-vaporetto](https://github.com/hotchpotch/duckdb-vaporetto)** (11 stars) - 🇯🇵 Japanese full-text search extension for `DuckDB`.
 - 🧭 **[JaCWIR](https://github.com/hotchpotch/JaCWIR)** - 🇯🇵 Casual Japanese web retrieval evaluation dataset.
-- 🪞 **[similar-documents-cli](https://github.com/hotchpotch/similar-documents-cli)** - Find semantically similar documents from the command line.
 - 🌍 **[trn](https://github.com/hotchpotch/trn)** - Fast translation CLI using Apple's native framework.
+- 🪞 **[similar-documents-cli](https://github.com/hotchpotch/similar-documents-cli)** - Find semantically similar documents from the command line.
 - 🗜️ **[ncd_classifier](https://github.com/hotchpotch/ncd_classifier)** - Classify text using compression distance without parameters.
 - 🧑‍🏫 **[youri-7b-sft-qa-context-jaqket](https://github.com/hotchpotch/youri-7b-sft-qa-context-jaqket)** - 🇯🇵 Fine-tune Japanese QA models with retrieval context.
 - 🎓 **[fineweb-2-edu-japanese-classifier](https://github.com/hotchpotch/fineweb-2-edu-japanese-classifier)** - 🇯🇵 Score educational quality in Japanese web content.
 
 ## Tools & Other Projects
 
-- 🔌 **[openai-api-server-via-codex](https://github.com/hotchpotch/openai-api-server-via-codex)** (33 stars) - Serve an OpenAI-compatible API through `Codex`.
+- 🔌 **[openai-api-server-via-codex](https://github.com/hotchpotch/openai-api-server-via-codex)** (57 stars) - Serve an OpenAI-compatible API through `Codex`.
+- 👆 **[herdr-tiny-fingers](https://github.com/hotchpotch/herdr-tiny-fingers)** (12 stars) - Copy visible terminal text using keyboard hints.
 - 🏗️ **[hatena-group-static-generator](https://github.com/hotchpotch/hatena-group-static-generator)** - 🇯🇵 Export Hatena Group content as static pages.
-- 👆 **[herdr-tiny-fingers](https://github.com/hotchpotch/herdr-tiny-fingers)** - Copy visible terminal text using keyboard hints.
-- 🦕 **[next-with-typesaurus-example](https://github.com/hotchpotch/next-with-typesaurus-example)** - Example Next.js application using typed Firestore access.
 - 🖼️ **[pixoo-spotify](https://github.com/hotchpotch/pixoo-spotify)** - Display Spotify artwork on a Pixoo screen.
+- 🦕 **[next-with-typesaurus-example](https://github.com/hotchpotch/next-with-typesaurus-example)** - Example Next.js application using typed Firestore access.
 - 🚀 **[rapids-svr-svc-marc_ja](https://github.com/hotchpotch/rapids-svr-svc-marc_ja)** - 🇯🇵 Train accelerated classifiers on Japanese MARC records.
 
 <details>
@@ -60,6 +60,7 @@
 - 🌉 **[uffy](https://github.com/hotchpotch/uffy)** - Bridge ActionScript and JavaScript application code.
 - 📡 **[Arduino-i2cdetect](https://github.com/hotchpotch/Arduino-i2cdetect)** - Scan connected devices on Arduino `I2C` buses.
 - 📦 **[faraday_middleware-msgpack](https://github.com/hotchpotch/faraday_middleware-msgpack)** - MessagePack middleware integration for Ruby `Faraday`.
+- 🗣️ **[fluent_interface](https://github.com/hotchpotch/fluent_interface)** - Build fluent method chains in Ruby modules.
 - 👥 **[hatenausermulti-xul](https://github.com/hotchpotch/hatenausermulti-xul)** - 🇯🇵 Switch between multiple Hatena accounts in Firefox.
 - 🎨 **[jscolor](https://github.com/hotchpotch/jscolor)** - Compact color manipulation helpers written in JavaScript.
 - 🧑‍🔧 **[moco](https://github.com/hotchpotch/moco)** - Command-line client for the online `mbed` compiler.
@@ -67,7 +68,6 @@
 - 🌡️ **[Arduino-HDC1000](https://github.com/hotchpotch/Arduino-HDC1000)** - Arduino library for HDC1000 environmental sensors.
 - 🔢 **[Arduino-SN74141](https://github.com/hotchpotch/Arduino-SN74141)** - Arduino driver for SN74141 Nixie tube controllers.
 - 🔎 **[atok-direct-google-moshikashite](https://github.com/hotchpotch/atok-direct-google-moshikashite)** - 🇯🇵 Google suggestion plugin for Japanese `ATOK` input.
-- 🗣️ **[fluent_interface](https://github.com/hotchpotch/fluent_interface)** - Build fluent method chains in Ruby modules.
 - 📰 **[hatena-blog-entry-mlt-example](https://github.com/hotchpotch/hatena-blog-entry-mlt-example)** - 🇯🇵 Example related-entry search for Hatena Blog posts.
 - 🪄 **[meta_framework-vim](https://github.com/hotchpotch/meta_framework-vim)** - Experimental metaprogramming framework operated through Vim.
 - 📷 **[olympus-camera](https://github.com/hotchpotch/olympus-camera)** - Ruby wrapper for the Olympus Camera API.

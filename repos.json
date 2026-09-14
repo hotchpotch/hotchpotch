@@ -11,8 +11,8 @@
         "nlp"
       ],
       "url": "https://github.com/hakari-bench/hakari-bench",
-      "stars": 30,
-      "pushed_at": "2026-08-12T04:09:56Z",
+      "stars": 31,
+      "pushed_at": "2026-09-14T00:49:23Z",
       "hidden": false
     },
     "hotchpotch/activerecord-raw-data": {
@@ -179,7 +179,7 @@
         "nlp"
       ],
       "url": "https://github.com/hotchpotch/beko-translate",
-      "stars": 36,
+      "stars": 37,
       "pushed_at": "2026-03-25T10:42:49Z",
       "hidden": false
     },
@@ -321,7 +321,7 @@
         "nlp"
       ],
       "url": "https://github.com/hotchpotch/fast-bunkai",
-      "stars": 75,
+      "stars": 77,
       "pushed_at": "2025-10-14T07:58:24Z",
       "hidden": false
     },
@@ -377,7 +377,7 @@
         "tools"
       ],
       "url": "https://github.com/hotchpotch/fluent_interface",
-      "stars": 4,
+      "stars": 5,
       "pushed_at": "2008-07-08T15:33:41Z",
       "hidden": false
     },
@@ -475,7 +475,7 @@
         "tools"
       ],
       "url": "https://github.com/hotchpotch/herdr-tiny-fingers",
-      "stars": 6,
+      "stars": 12,
       "pushed_at": "2026-08-04T10:03:33Z",
       "hidden": false
     },
@@ -490,7 +490,7 @@
       ],
       "url": "https://github.com/hotchpotch/hotchpotch",
       "stars": 0,
-      "pushed_at": "2026-08-17T01:33:48Z",
+      "pushed_at": "2026-08-17T01:47:29Z",
       "hidden": true
     },
     "hotchpotch/hotchpotch.github.com": {
@@ -773,7 +773,7 @@
         "nlp"
       ],
       "url": "https://github.com/hotchpotch/open_provence",
-      "stars": 65,
+      "stars": 67,
       "pushed_at": "2025-11-22T01:30:13Z",
       "hidden": false
     },
@@ -787,8 +787,8 @@
         "tools"
       ],
       "url": "https://github.com/hotchpotch/openai-api-server-via-codex",
-      "stars": 33,
-      "pushed_at": "2026-08-13T09:53:18Z",
+      "stars": 57,
+      "pushed_at": "2026-09-07T09:08:19Z",
       "hidden": false
     },
     "hotchpotch/perl-acme-momoiroclover": {
@@ -829,7 +829,7 @@
         "tools"
       ],
       "url": "https://github.com/hotchpotch/pixoo-spotify",
-      "stars": 0,
+      "stars": 1,
       "pushed_at": "2026-08-10T11:09:41Z",
       "hidden": false
     },
@@ -1124,7 +1124,7 @@
         "nlp"
       ],
       "url": "https://github.com/hotchpotch/trn",
-      "stars": 8,
+      "stars": 9,
       "pushed_at": "2026-08-06T01:16:31Z",
       "hidden": false
     },
